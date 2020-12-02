@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</title>
+    <title>SALON - Pairwise and Multiple Sequence ALignment ONtology</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
@@ -205,7 +205,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments"
+        "@value": "SALON - Pairwise and Multiple Sequence ALignment ONtology"
       }
     ],
     "https://schema.org/rights": [
@@ -220,9 +220,9 @@
 <body>
   <div id="pylode">made by <a target="_parent" href="http://github.com/rdflib/pyLODE">
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.8.3</span>
+    <span style="font-size:smaller;">2.8.4</span>
   </div>
-  <h1>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</h1>
+  <h1>SALON - Pairwise and Multiple Sequence ALignment ONtology</h1>
 <section id="metadata">
     <h2 style="display:none;">Metadata</h2>
     <dl>
@@ -255,7 +255,7 @@
         </g>
     </g>
 </svg></a>
-    (<a target="_parent" href="mailto:ismael@lcc.uma.es">ismael@lcc.uma.es</a>) of 
+    (<a href="mailto:ismael@lcc.uma.es">ismael@lcc.uma.es</a>) of 
     <a target="_parent" href="https://www.uma.es/">University of Málaga</a><br/>
             
     <a target="_parent" href="https://orcid.org/0000-0002-4396-8359">Antonio Benítez-Hidalgo</a>
@@ -278,21 +278,23 @@
         </g>
     </g>
 </svg></a>
-    (<a target="_parent" href="mailto:antoniobenitez@lcc.uma.es">antoniobenitez@lcc.uma.es</a>) of 
+    (<a href="mailto:antoniobenitez@lcc.uma.es">antoniobenitez@lcc.uma.es</a>) of 
     <a target="_parent" href="https://www.uma.es/">University of Málaga</a><br/>
             
     María del Mar Roldán-García
-    (<a target="_parent" href="mailto:mmar@lcc.uma.es">mmar@lcc.uma.es</a>) of 
+    (<a href="mailto:mmar@lcc.uma.es">mmar@lcc.uma.es</a>) of 
     <a target="_parent" href="https://www.uma.es/">University of Málaga</a><br/>
         </dd>
         <dt><a class="proplink" target="_parent" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
-        <dd>2020-11-01</dd>
+        <dd>2020-11-01T23:59:59</dd>
         <dt><a class="proplink" target="_parent" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
-        <dd>2020-11-27</dd>
+        <dd>2020-11-02T23:59:59</dd>
+        <dt>Version Information</dt>
+        <dd>V1.0.0</dd>
         <dt>Rights</dt>
         <dd>&copy; Khaos Research Group, University of Málaga</dd>
         <dt>Ontology RDF</dt>
-        <dd><a target="_parent" href="SALON.owl">RDF (xml)</a></dd>
+        <dd><a href="SALON.owl">RDF (xml)</a></dd>
         <dt>Code Repository</dt>
         <dd><a target="_parent" href="https://github.com/benhid/SALON">https://github.com/benhid/SALON</a></dd>
     </dl>
@@ -321,7 +323,7 @@
     </div>
 </section>
   <section id="classes">
-    <h2>Classes <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#Alignment">Alignment</a></li>
         <li><a href="#AlignmentColumn">Alignment Column</a></li>
@@ -359,30 +361,30 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Pairwise or multiple Sequence Alignment</p>
+                    <p>Set of biological sequences, used to identify regions of similarity that may indicate functional, structural and/or evolutionary relationships between them.</p>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -397,30 +399,30 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>The alignment_column contains one residue (or a gap character) from each sequence. The residues in the column are considered to be equivalent. If no equivalent residue exists for a given sequence, a gap character is inserted.</p>
+                    <p>A representation of a column in the alignment. Note that a column with all gaps is not allowed.</p>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#column">column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#atSequenceIndex">atSequenceIndex</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#consensusCharacter">consensusCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#columnWeight">columnWeight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#consensusCharacter">consensusCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#columnWeight">columnWeight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#column">column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#atSequenceIndex">atSequenceIndex</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -433,21 +435,27 @@
                 <td><code>http://www.ontologies.khaos.uma.es/salon/AlignmentScore</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    <p>A score given to the alignment.</p>
+                </td>
+            </tr>
+            <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -460,16 +468,22 @@
                 <td><code>http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    <p>The method used to calculate the scoring function.</p>
+                </td>
+            </tr>
+            <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MinimizationAlignmentScoreFunction">MinimizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#MinimizationAlignmentScoreFunction">MinimizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -484,38 +498,38 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>The order of residues and insertions/deletions represented by gap characters in a single sequence. For proteins, this is known as the primary structure.</p>
+                    <p>An ordered succession of residues and gap characters in a sequence. For proteins, this is known as the primary structure.</p>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#DNAAlignmentSequence">DNAAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DNAAlignmentSequence">DNAAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#identifier">identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#length">length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#sequence">sequence</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#organism">organism</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#sequence">sequence</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#identifier">identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#organism">organism</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#length">length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -528,21 +542,27 @@
                 <td><code>http://www.ontologies.khaos.uma.es/salon/ColumnScore</code></td>
             </tr>
             <tr>
+                <th>Description</th>
+                <td>
+                    <p>A score given to a single column.</p>
+                </td>
+            </tr>
+            <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -557,20 +577,20 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>The method used to calculate the fitness function.</p>
+                    <p>The method used to calculate the scoring function for a given column.</p>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -585,20 +605,20 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>The method used to construct the sequence alignment.</p>
+                    <p>The method or algorithm used to construct the sequence alignment.</p>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -613,7 +633,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -628,16 +648,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#HiddenMarkovModel">HiddenMarkovModel</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#MasterSlaveMethod">MasterSlaveMethod</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#IterativeMethod">IterativeMethod</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ProgressiveMethod">ProgressiveMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#MasterSlaveMethod">MasterSlaveMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#HiddenMarkovModel">HiddenMarkovModel</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#IterativeMethod">IterativeMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ProgressiveMethod">ProgressiveMethod</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -652,13 +672,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Genetic_Algorithm">Genetic_Algorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#Genetic_Algorithm">Genetic_Algorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -679,18 +699,18 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#FType">FType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#FNote">FNote</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#FScore">FScore</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#FStart">FStart</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#FStop">FStop</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#FType">FType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#FStop">FStop</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#FStart">FStart</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#FNote">FNote</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#FScore">FScore</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -705,7 +725,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -720,7 +740,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -735,7 +755,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -750,7 +770,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -765,7 +785,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -780,7 +800,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -795,7 +815,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -810,7 +830,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -825,7 +845,7 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -840,21 +860,21 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Sequence's protein.</p>
+                    <p>The protein associated to an amino acid sequence.</p>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#proteinDescription">proteinDescription</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#geneName">geneName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#geneName">geneName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#proteinDescription">proteinDescription</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -869,19 +889,19 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -896,13 +916,13 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -917,37 +937,37 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>A subset of sequences in the msa. e.g. a phylogenetic subgroup such as 'mammals', or a sequence cluster calculated by an automatic method such as secator/dpc or any other subset.</p>
+                    <p>A subset of sequences in the alignment.</p>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a target="_parent" href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#subAlignmentName">subAlignmentName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#gapCharacter">gapCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#subAlignmentName">subAlignmentName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a target="_parent" href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#gapCharacter">gapCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a target="_parent" href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
 </section>
 <section id="objectproperties">
-    <h2>Object Properties <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#associatedTo">associatedTo</a></li>
         <li><a href="#constructionMethod">constructionMethod</a></li>
@@ -974,13 +994,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -995,13 +1015,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1016,13 +1036,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1037,13 +1057,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1058,19 +1078,19 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a target="_parent" href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1085,13 +1105,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1106,13 +1126,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1127,19 +1147,19 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a target="_parent" href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1154,19 +1174,19 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a target="_parent" href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1181,19 +1201,19 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a target="_parent" href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1208,13 +1228,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1229,13 +1249,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1250,13 +1270,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1271,13 +1291,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1285,7 +1305,7 @@
 </section>
 
 <section id="datatypeproperties">
-    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#Recommended_Name">Protein recommended name</a></li>
         <li><a href="#mnemonic">Mnemonic</a></li>
@@ -1324,7 +1344,7 @@
             <tr>
                 <th>Equivalent properties</th>
                 <td>
-                    <a href="#proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup>
+                    <a target="_parent" href="#proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup>
                 </td>
             </tr>
         </table>
@@ -1339,7 +1359,7 @@
             <tr>
                 <th>Equivalent properties</th>
                 <td>
-                    <a href="#accessionNumber">accessionNumber</a><sup class="sup-dp" title="datatype property">dp</sup>
+                    <a target="_parent" href="#accessionNumber">accessionNumber</a><sup class="sup-dp" title="datatype property">dp</sup>
                 </td>
             </tr>
         </table>
@@ -1354,7 +1374,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1375,7 +1395,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1403,7 +1423,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1430,7 +1450,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1451,7 +1471,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1478,7 +1498,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1505,7 +1525,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1532,7 +1552,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1559,7 +1579,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1586,7 +1606,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1613,7 +1633,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1646,7 +1666,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1673,7 +1693,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1700,7 +1720,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1727,7 +1747,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1754,7 +1774,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1781,7 +1801,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1802,7 +1822,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1823,13 +1843,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    Recommended name of the protein associated to the protein sequence.
+                    Recommended name of the protein associated to the amino acid sequence.
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1856,7 +1876,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1878,7 +1898,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1900,7 +1920,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
+                    (<a target="_parent" href="#AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="#ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1928,7 +1948,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1949,7 +1969,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a target="_parent" href="#SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1963,7 +1983,7 @@
 </section>
 
 <section id="annotationproperties">
-    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Annotation Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#created">created</a></li>
         <li><a href="#creator">creator</a></li>
@@ -1975,6 +1995,7 @@
         <li><a href="#title">title</a></li>
         <li><a href="#preferredNamespacePrefix">preferredNamespacePrefix</a></li>
         <li><a href="#preferredNamespaceUri">preferredNamespaceUri</a></li>
+        <li><a href="#versionInfo">versionInfo</a></li>
         <li><a href="#affiliation">affiliation</a></li>
         <li><a href="#codeRepository">codeRepository</a></li>
         <li><a href="#email">email</a></li>
@@ -2072,6 +2093,15 @@
             </tr>
         </table>
     </div>
+    <div class="entity property" id="versionInfo">
+        <h3>versionInfo<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.w3.org/2002/07/owl#versionInfo</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="affiliation">
         <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup></h3>
         <table>
@@ -2130,15 +2160,9 @@
 
   
   <section id="namedindividuals">
-    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#AlignmentScoreTC">AlignmentScoreTC</a></li>
-        <li><a href="#BB11001">BB11001</a></li>
-        <li><a href="#BB11001Col1">BB11001Col1</a></li>
-        <li><a href="#BB11001Col1Score">BB11001Col1Score</a></li>
-        <li><a href="#BB11001Col2">BB11001Col2</a></li>
-        <li><a href="#BB11001Col3">BB11001Col3</a></li>
-        <li><a href="#BB11001Score">BB11001Score</a></li>
         <li><a href="#BLAST">BLAST</a></li>
         <li><a href="#ClustalW">ClustalW</a></li>
         <li><a href="#ColumnScoreNongapsPercentage">ColumnScoreNongapsPercentage</a></li>
@@ -2168,115 +2192,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001">
-        <h3>BB11001<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#Alignment">Alignment</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001Col1">
-        <h3>BB11001Col1<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001Col1
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#AlignmentColumn">AlignmentColumn</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001Col1Score">
-        <h3>BB11001Col1Score<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001Col1Score
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#ColumnScore">ColumnScore</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001Col2">
-        <h3>BB11001Col2<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001Col2
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#AlignmentColumn">AlignmentColumn</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001Col3">
-        <h3>BB11001Col3<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001Col3
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#AlignmentColumn">AlignmentColumn</a><br/>
-            </dd>
-        </table>
-    </div>
-    <div class="entity named_individual" id="BB11001Score">
-        <h3>BB11001Score<sup title="named individual" class="sup-ni">ni</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td>
-                  <code>
-                      http://www.ontologies.khaos.uma.es/salon/BB11001Score
-                  
-                  </code>
-                </td>
-            </tr>
-            <dt>Classes(s)</dt>
-            <dd>
-                <a href="#AlignmentScore">AlignmentScore</a><br/>
+                <a target="_parent" href="#MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><br/>
             </dd>
         </table>
     </div>
@@ -2294,7 +2210,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MasterSlaveMethod">MasterSlaveMethod</a><br/>
+                <a target="_parent" href="#MasterSlaveMethod">MasterSlaveMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2312,7 +2228,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#ProgressiveMethod">ProgressiveMethod</a><br/>
+                <a target="_parent" href="#ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2330,7 +2246,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
+                <a target="_parent" href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
@@ -2348,7 +2264,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
+                <a target="_parent" href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
@@ -2366,7 +2282,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><br/>
+                <a target="_parent" href="#MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><br/>
             </dd>
             <tr>
                 <th>Description</th>
@@ -2390,7 +2306,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
+                <a target="_parent" href="#MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
@@ -2408,7 +2324,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#ConstructionMethod">ConstructionMethod</a><br/>
+                <a target="_parent" href="#ConstructionMethod">ConstructionMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2426,7 +2342,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#ProgressiveMethod">ProgressiveMethod</a><br/>
+                <a target="_parent" href="#ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2444,7 +2360,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#IterativeMethod">IterativeMethod</a><br/>
+                <a target="_parent" href="#IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2462,7 +2378,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#HiddenMarkovModel">HiddenMarkovModel</a><br/>
+                <a target="_parent" href="#HiddenMarkovModel">HiddenMarkovModel</a><br/>
             </dd>
         </table>
     </div>
@@ -2480,7 +2396,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#IterativeMethod">IterativeMethod</a><br/>
+                <a target="_parent" href="#IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2498,7 +2414,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#IterativeMethod">IterativeMethod</a><br/>
+                <a target="_parent" href="#IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2516,7 +2432,7 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#ProgressiveMethod">ProgressiveMethod</a><br/>
+                <a target="_parent" href="#ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
@@ -2534,14 +2450,14 @@
             </tr>
             <dt>Classes(s)</dt>
             <dd>
-                <a href="#ProgressiveMethod">ProgressiveMethod</a><br/>
+                <a target="_parent" href="#ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
 </section>
   
   <section id="namespaces">
-    <h2>Namespaces <span style="float:right; font-size:smaller;"><a target="_parent" href="">&uparrow;</a></span></h2>
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>:</dt>
         <dd><code>http://www.ontologies.khaos.uma.es/salon/</code></dd>
