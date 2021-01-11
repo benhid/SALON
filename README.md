@@ -48,25 +48,22 @@ saloncli create -i SALON.owl
 
 Transform sequence alignment to RDF/XML 
 ```bash
-saloncli parse -i examples/sample.fasta -o sample.ttl
+saloncli parse -i examples/BB11001.xml -o BB11001.ttl
 ```
 
 Populates RDF repository  
 ```bash
-saloncli load -i sample.ttl
+saloncli load -i BB11001.ttl
 ```
 
 Enriches protein sequence given its URI
 ```bash
-saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/sample_1A00
-saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/sample_1e32
-saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/sample_1e94
-saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/sample_1d2n
+saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/BB11001_1aab_
 ```
 
 Generates UniprotKB FASTA description line for protein sequence given its URI
 ```bash
-saloncli export -x http://www.ontologies.khaos.uma.es/salon/sample_1A00
+saloncli export -x http://www.ontologies.khaos.uma.es/salon/BB11001_1aab_
 ```
 
 ### 📖 Documentation
@@ -74,7 +71,7 @@ saloncli export -x http://www.ontologies.khaos.uma.es/salon/sample_1A00
 Documentation was generated with pyLODE 2.8.3:
 
 ```bash
-pylode -i SALON.owl -o ./docs/index.html
+make docs
 ```
 
 <p align="center">&mdash; ⭐️ &mdash;</p>

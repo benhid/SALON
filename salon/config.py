@@ -8,7 +8,7 @@ class _BaseSettings(BaseSettings):
     STARDOG_ENDPOINT: str = "http://0.0.0.0:5820"
     STARDOG_USERNAME: str = "admin"
     STARDOG_PASSWORD: str = "admin"
-    STARDOG_DATABASE: str = "sao"
+    STARDOG_DATABASE: str = "SALON"
 
     class Config:
         env_file = ".env"
