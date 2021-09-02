@@ -9,8 +9,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:salon="http://www.ontologies.khaos.uma.es/salon/">
+     xmlns:salon="http://www.ontologies.khaos.uma.es/salon/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://www.ontologies.khaos.uma.es/salon/">
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-01T23:59:59</dct:created>
         <dct:creator>
@@ -21,9 +24,8 @@
                         <sdo:url rdf:resource="https://www.uma.es/"/>
                     </rdf:Description>
                 </sdo:affiliation>
-                <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-                <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-                <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+                <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+                <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
             </rdf:Description>
         </dct:creator>
         <dct:creator>
@@ -47,8 +49,9 @@
                         <sdo:url rdf:resource="https://www.uma.es/"/>
                     </rdf:Description>
                 </sdo:affiliation>
-                <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-                <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+                <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+                <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+                <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
             </rdf:Description>
         </dct:creator>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-02T23:59:59</dct:modified>
@@ -60,7 +63,7 @@
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.ontologies.khaos.uma.es/salon/</vann:preferredNamespaceUri>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Pairwise and Multiple Sequence ALignment ONtology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V1.0.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V1.0.1</owl:versionInfo>
         <sdo:codeRepository rdf:resource="https://github.com/benhid/SALON"/>
     </owl:Ontology>
     
@@ -134,6 +137,12 @@
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -804,6 +813,15 @@
     
 
 
+    <!-- http://www.ontologies.khaos.uma.es/salon/CorrectAlignment -->
+
+    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/CorrectAlignment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correct Alignment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ontologies.khaos.uma.es/salon/DNAAlignmentSequence -->
 
     <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/DNAAlignmentSequence">
@@ -908,6 +926,15 @@
     <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction">
         <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimization Column Score Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment -->
+
+    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment">
+        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not correct Alignment</rdfs:label>
     </owl:Class>
     
 
@@ -1117,113 +1144,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
@@ -1277,6 +1197,80 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
@@ -1288,8 +1282,20 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1309,9 +1315,62 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     
 
@@ -1326,6 +1385,387 @@
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
         <rdfs:label>Thing</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cs">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csf">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmax">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmin">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/as">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asf">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amax">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment incorrectness</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore"/>
+                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
+                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction"/>
+                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMin"/>
+                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment correctness</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumn"/>
+                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScore"/>
+                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
+                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
+                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csc"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction"/>
+                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
+                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
+                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
+                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cmax"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cmin"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc"/>
+                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmax"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc"/>
+                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmin"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMin"/>
+                                                                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                        <rdf:first>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
+                                                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amax"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                <rdf:first>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                                                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amax"/>
+                                                                                                                                        </swrl:arguments>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                                        <rdf:first>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                                                                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                                                                                                </swrl:arguments>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:first>
+                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/CorrectAlignment"/>
+                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 

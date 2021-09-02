@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
+EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
     <style>
@@ -132,8 +135,8 @@
         .sup-ap,
         .sup-p,
         .sup-ni,
-        .sup-cp,
-        .sup-cl {
+        .sup-con,
+        .sup-col {
             cursor:help;
             margin-left: 3px;
         }
@@ -166,11 +169,11 @@
             color:brown;
         }
 
-        .sup-cp {
+        .sup-con {
             color:orange;
         }
 
-        .sup-cl {
+        .sup-col {
             color:darkred;
         }
 
@@ -187,40 +190,13 @@
     </style>
     
     <script type="application/ld+json">
-      [
-  {
-    "@id": "http://www.ontologies.khaos.uma.es/salon/",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/codeRepository": [
-      {
-        "@id": "https://github.com/benhid/SALON"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@value": "<p>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</p>"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments"
-      }
-    ],
-    "https://schema.org/rights": [
-      {
-        "@value": "&copy; Khaos Research Group, University of Málaga"
-      }
-    ]
-  }
-]
+      b'[\n  {\n    "@id": "http://www.ontologies.khaos.uma.es/salon/",\n    "@type": [\n      "https://schema.org/DefinedTermSet"\n    ],\n    "https://schema.org/codeRepository": [\n      {\n        "@id": "https://github.com/benhid/SALON"\n      }\n    ],\n    "https://schema.org/description": [\n      {\n        "@value": "<p>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</p>"\n      }\n    ],\n    "https://schema.org/name": [\n      {\n        "@value": "SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments"\n      }\n    ],\n    "https://schema.org/rights": [\n      {\n        "@value": "&copy; Khaos Research Group, University of M\xc3\xa1laga"\n      }\n    ]\n  }\n]'
     </script>
 </head>
 <body>
   <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
     <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.8.4</span>
+    <span style="font-size:smaller;">2.12.0</span>
   </div>
   <h1>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</h1>
 <section id="metadata">
@@ -236,7 +212,8 @@
         <dd>
             
     <a href="https://orcid.org/0000-0001-7819-5416">Ismael Navas-Delgado</a>
-    <a href="https://orcid.org/0000-0001-7819-5416"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    <a href="">
+  <svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Orcid logo</title>
@@ -254,12 +231,14 @@
             </g>
         </g>
     </g>
-</svg></a>
+  </svg>
+</a>
     (<a href="mailto:ismael@lcc.uma.es">ismael@lcc.uma.es</a>) of 
     <a href="https://www.uma.es/">University of Málaga</a><br/>
             
     <a href="https://orcid.org/0000-0002-4396-8359">Antonio Benítez-Hidalgo</a>
-    <a href="https://orcid.org/0000-0002-4396-8359"><svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
+    <a href="">
+  <svg width="15px" height="15px" viewBox="0 0 72 72" version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Orcid logo</title>
@@ -277,7 +256,8 @@
             </g>
         </g>
     </g>
-</svg></a>
+  </svg>
+</a>
     (<a href="mailto:antoniobenitez@lcc.uma.es">antoniobenitez@lcc.uma.es</a>) of 
     <a href="https://www.uma.es/">University of Málaga</a><br/>
             
@@ -290,7 +270,7 @@
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
         <dd>2020-11-02T23:59:59</dd>
         <dt>Version Information</dt>
-        <dd>V1.0.0</dd>
+        <dd>V1.0.1</dd>
         <dt>Rights</dt>
         <dd>&copy; Khaos Research Group, University of Málaga</dd>
         <dt>Ontology RDF</dt>
@@ -301,6 +281,11 @@
     <h2>Description</h2>
     <div id="description">
         <p>SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</p>
+        <section id="overview">
+            <a href="https://github.com/benhid/SALON/blob/master/SALON.owl"><img src="https://img.shields.io/badge/owl-SALON.owl-blue?style=flat-square" /></a>
+            <a href="https://github.com/benhid/SALON/"><img src="https://img.shields.io/badge/Python%20Cli-saloncli-brightgreen?style=flat-square&logo=github" /></a>
+            <a href="https://ontologies.khaos.uma.es/salon/endpoint/sparql"><img src="https://img.shields.io/badge/Endpoint-SPARQL-important?style=flat-square" /></a>
+        </section>
     </div>
 </section>
 <section id="toc">
@@ -315,44 +300,42 @@
         <li><a href="#legend">Legend</a></li>
     </ol>
 </section>
-<section id="overview">
-    <h2>Overview</h2>
-    <div class="figure">
-        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
-</section>
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#Alignment">Alignment</a></li>
-        <li><a href="#AlignmentColumn">Alignment Column</a></li>
-        <li><a href="#AlignmentScore">Alignment Score</a></li>
-        <li><a href="#AlignmentScoreFunction">Alignment Score Function</a></li>
-        <li><a href="#AlignmentSequence">Alignment Sequence</a></li>
-        <li><a href="#ColumnScore">Column Score</a></li>
-        <li><a href="#ColumnScoreFunction">Column Score Function</a></li>
-        <li><a href="#ConstructionMethod">Construction Method</a></li>
-        <li><a href="#DNAAlignmentSequence">DNA Sequence</a></li>
-        <li><a href="#DeterministicApproach">Deterministic Approach</a></li>
-        <li><a href="#EvolutionaryAlgorithm">Evolutionary algorithm</a></li>
-        <li><a href="#Feature">Feature</a></li>
-        <li><a href="#Genetic_Algorithm">Genetic Algorithm</a></li>
-        <li><a href="#HiddenMarkovModel">Hidden Markov model</a></li>
-        <li><a href="#IterativeMethod">Iterative method</a></li>
-        <li><a href="#MasterSlaveMethod">Master-slave method</a></li>
-        <li><a href="#MaximizationAlignmentScoreFunction">Maximization Alignment Score Function</a></li>
-        <li><a href="#MaximizationColumnScoreFunction">Maximization Column Score Function</a></li>
-        <li><a href="#MinimizationAlignmentScoreFunction">Minimization Alignment Score Function</a></li>
-        <li><a href="#MinimizationColumnScoreFunction">Minimization Column Score Function</a></li>
-        <li><a href="#ProgressiveMethod">Progressive method</a></li>
-        <li><a href="#Protein">Protein</a></li>
-        <li><a href="#ProteinAlignmentSequence">Protein Sequence</a></li>
-        <li><a href="#StochasticApproach">Stochastic Approach</a></li>
-        <li><a href="#SubAlignment">Sub Alignment</a></li>
+      <li><a href="#Alignment">Alignment</a></li>
+      <li><a href="#AlignmentColumn">Alignment Column</a></li>
+      <li><a href="#AlignmentScore">Alignment Score</a></li>
+      <li><a href="#AlignmentScoreFunction">Alignment Score Function</a></li>
+      <li><a href="#AlignmentSequence">Alignment Sequence</a></li>
+      <li><a href="#ColumnScore">Column Score</a></li>
+      <li><a href="#ColumnScoreFunction">Column Score Function</a></li>
+      <li><a href="#ConstructionMethod">Construction Method</a></li>
+      <li><a href="#CorrectAlignment">Correct Alignment</a></li>
+      <li><a href="#DNASequence">DNA Sequence</a></li>
+      <li><a href="#DeterministicApproach">Deterministic Approach</a></li>
+      <li><a href="#Evolutionaryalgorithm">Evolutionary algorithm</a></li>
+      <li><a href="#Feature">Feature</a></li>
+      <li><a href="#GeneticAlgorithm">Genetic Algorithm</a></li>
+      <li><a href="#HiddenMarkovmodel">Hidden Markov model</a></li>
+      <li><a href="#Iterativemethod">Iterative method</a></li>
+      <li><a href="#Master-slavemethod">Master-slave method</a></li>
+      <li><a href="#MaximizationAlignmentScoreFunction">Maximization Alignment Score Function</a></li>
+      <li><a href="#MaximizationColumnScoreFunction">Maximization Column Score Function</a></li>
+      <li><a href="#MinimizationAlignmentScoreFunction">Minimization Alignment Score Function</a></li>
+      <li><a href="#MinimizationColumnScoreFunction">Minimization Column Score Function</a></li>
+      <li><a href="#NotcorrectAlignment">Not correct Alignment</a></li>
+      <li><a href="#Progressivemethod">Progressive method</a></li>
+      <li><a href="#Protein">Protein</a></li>
+      <li><a href="#ProteinSequence">Protein Sequence</a></li>
+      <li><a href="#StochasticApproach">Stochastic Approach</a></li>
+      <li><a href="#SubAlignment">Sub Alignment</a></li>
     </ul>
     <div class="entity class" id="Alignment">
-        <h3>Alignment<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Alignment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Alignment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -367,30 +350,40 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentScore">Alignment Score</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#CorrectAlignment">Correct Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NotcorrectAlignment">Not correct Alignment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="AlignmentColumn">
-        <h3>Alignment Column<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Alignment Column<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AlignmentColumn" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -405,30 +398,33 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#ColumnScore">Column Score</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/column">column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/consensusCharacter">consensusCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/atSequenceIndex">atSequenceIndex</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/columnWeight">columnWeight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Column">Column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Consensuscharacter">Consensus character</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Columnweight">Column weight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Sequenceindex">Sequence index</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="AlignmentScore">
-        <h3>Alignment Score<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Alignment Score<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AlignmentScore" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -443,25 +439,28 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="AlignmentScoreFunction">
-        <h3>Alignment Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Alignment Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AlignmentScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -476,20 +475,23 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MinimizationAlignmentScoreFunction">MinimizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MaximizationAlignmentScoreFunction">Maximization Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MinimizationAlignmentScoreFunction">Minimization Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="AlignmentSequence">
-        <h3>Alignment Sequence<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Alignment Sequence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#AlignmentSequence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -504,38 +506,41 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DNAAlignmentSequence">DNAAlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProteinSequence">Protein Sequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DNASequence">DNA Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/length">length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/organism">organism</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/identifier">identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/sequence">sequence</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#SequenceIdentifier">Sequence Identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Sequence">Sequence</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Sequencelength">Sequence length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Sequenceorganism">Sequence organism</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="ColumnScore">
-        <h3>Column Score<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Column Score<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ColumnScore" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -550,25 +555,28 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="ColumnScoreFunction">
-        <h3>Column Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Column Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ColumnScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -583,20 +591,23 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MinimizationColumnScoreFunction">Minimization Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MaximizationColumnScoreFunction">Maximization Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="ConstructionMethod">
-        <h3>Construction Method<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Construction Method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ConstructionMethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -611,20 +622,47 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DeterministicApproach">Deterministic Approach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StochasticApproach">Stochastic Approach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DynamicProgramming">DynamicProgramming</a><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="DNAAlignmentSequence">
-        <h3>DNA Sequence<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="CorrectAlignment">
+        <h3>
+          Correct Alignment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CorrectAlignment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.ontologies.khaos.uma.es/salon/CorrectAlignment</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DNASequence">
+        <h3>
+          DNA Sequence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DNASequence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -633,13 +671,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="DeterministicApproach">
-        <h3>Deterministic Approach<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Deterministic Approach<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DeterministicApproach" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -648,22 +689,25 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ConstructionMethod">Construction Method</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/HiddenMarkovModel">HiddenMarkovModel</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProgressiveMethod">ProgressiveMethod</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/IterativeMethod">IterativeMethod</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MasterSlaveMethod">MasterSlaveMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Progressivemethod">Progressive method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Master-slavemethod">Master-slave method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Iterativemethod">Iterative method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HiddenMarkovmodel">Hidden Markov model</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="EvolutionaryAlgorithm">
-        <h3>Evolutionary algorithm<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Evolutionaryalgorithm">
+        <h3>
+          Evolutionary algorithm<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Evolutionaryalgorithm" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -672,19 +716,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/StochasticApproach">StochasticApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StochasticApproach">Stochastic Approach</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Genetic_Algorithm">Genetic_Algorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeneticAlgorithm">Genetic Algorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Feature">
-        <h3>Feature<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Feature<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Feature" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -699,24 +746,27 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/FScore">FScore</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/FNote">FNote</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/FStop">FStop</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/FStart">FStart</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/FType">FType</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Featurescore">Feature score</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Featurenote">Feature note</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Featurestop">Feature stop</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Featuretype">Feature type</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Featurestart">Feature start</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Genetic_Algorithm">
-        <h3>Genetic Algorithm<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="GeneticAlgorithm">
+        <h3>
+          Genetic Algorithm<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeneticAlgorithm" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -725,13 +775,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Evolutionaryalgorithm">Evolutionary algorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="HiddenMarkovModel">
-        <h3>Hidden Markov model<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="HiddenMarkovmodel">
+        <h3>
+          Hidden Markov model<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#HiddenMarkovmodel" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -740,13 +793,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DeterministicApproach">Deterministic Approach</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MUMMALS">MUMMALS</a><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="IterativeMethod">
-        <h3>Iterative method<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Iterativemethod">
+        <h3>
+          Iterative method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Iterativemethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -755,13 +817,24 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DeterministicApproach">Deterministic Approach</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MUSLCLE">MUSLCLE</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/PRIME">PRIME</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MAFFT">MAFFT</a><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="MasterSlaveMethod">
-        <h3>Master-slave method<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="Master-slavemethod">
+        <h3>
+          Master-slave method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Master-slavemethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -770,13 +843,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DeterministicApproach">Deterministic Approach</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/BLAST">BLAST</a><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="MaximizationAlignmentScoreFunction">
-        <h3>Maximization Alignment Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Maximization Alignment Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#MaximizationAlignmentScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -785,13 +867,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreTC">AlignmentScoreTC</a><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="MaximizationColumnScoreFunction">
-        <h3>Maximization Column Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Maximization Column Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#MaximizationColumnScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -800,13 +891,24 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreSOP">ColumnScoreSOP</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreTC">ColumnScoreTC</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreNongapsPercentage">ColumnScoreNongapsPercentage</a><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="MinimizationAlignmentScoreFunction">
-        <h3>Minimization Alignment Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Minimization Alignment Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#MinimizationAlignmentScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -815,13 +917,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="MinimizationColumnScoreFunction">
-        <h3>Minimization Column Score Function<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Minimization Column Score Function<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#MinimizationColumnScoreFunction" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -830,13 +935,40 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreShannonEntropy">ColumnScoreShannonEntropy</a><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="ProgressiveMethod">
-        <h3>Progressive method<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="NotcorrectAlignment">
+        <h3>
+          Not correct Alignment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NotcorrectAlignment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Progressivemethod">
+        <h3>
+          Progressive method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Progressivemethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -845,13 +977,25 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/DeterministicApproach">DeterministicApproach</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DeterministicApproach">Deterministic Approach</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Members</th>
+                <td>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/KAlign">KAlign</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SATCHMO">SATCHMO</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/T-Coffee">T-Coffee</a><br/>
+                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ClustalW">ClustalW</a><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="Protein">
-        <h3>Protein<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Protein<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Protein" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -866,21 +1010,24 @@
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/proteinDescription">proteinDescription</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/geneName">geneName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Proteinname">Protein name</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Proteingene">Protein gene</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Proteindescription">Protein description</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="ProteinAlignmentSequence">
-        <h3>Protein Sequence<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="ProteinSequence">
+        <h3>
+          Protein Sequence<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ProteinSequence" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -889,25 +1036,28 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="StochasticApproach">
-        <h3>Stochastic Approach<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Stochastic Approach<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#StochasticApproach" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -916,19 +1066,22 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ConstructionMethod">ConstructionMethod</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ConstructionMethod">Construction Method</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/EvolutionaryAlgorithm">EvolutionaryAlgorithm</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Evolutionaryalgorithm">Evolutionary algorithm</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
     <div class="entity class" id="SubAlignment">
-        <h3>Sub Alignment<sup title="class" class="sup-c">c</sup></h3>
+        <h3>
+          Sub Alignment<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SubAlignment" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -943,24 +1096,24 @@
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/gapCharacter">gapCharacter</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/subAlignmentName">subAlignmentName</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#SubAlignmentname">SubAlignment name</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Gapcharacter">Gap character</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -985,7 +1138,9 @@
         <li><a href="#isSubalignmentOf">isSubalignmentOf</a></li>
     </ul>
     <div class="entity property" id="associatedTo">
-        <h3>associatedTo<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>associatedTo<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#associatedTo" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -994,7 +1149,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProteinAlignmentSequence">ProteinAlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#ProteinSequence">Protein Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1006,7 +1161,9 @@
         </table>
     </div>
     <div class="entity property" id="constructionMethod">
-        <h3>constructionMethod<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>constructionMethod<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#constructionMethod" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1015,7 +1172,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1027,7 +1184,9 @@
         </table>
     </div>
     <div class="entity property" id="hasAlignmentScore">
-        <h3>hasAlignmentScore<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasAlignmentScore<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasAlignmentScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1036,7 +1195,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1048,7 +1207,9 @@
         </table>
     </div>
     <div class="entity property" id="hasAlignmentScoreFunction">
-        <h3>hasAlignmentScoreFunction<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasAlignmentScoreFunction<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasAlignmentScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1057,7 +1218,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentScore">Alignment Score</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1069,7 +1230,9 @@
         </table>
     </div>
     <div class="entity property" id="hasColumn">
-        <h3>hasColumn<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasColumn<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasColumn" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1078,13 +1241,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1096,7 +1259,9 @@
         </table>
     </div>
     <div class="entity property" id="hasColumnScore">
-        <h3>hasColumnScore<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasColumnScore<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasColumnScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1105,7 +1270,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1117,7 +1282,9 @@
         </table>
     </div>
     <div class="entity property" id="hasColumnScoreFunction">
-        <h3>hasColumnScoreFunction<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasColumnScoreFunction<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasColumnScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1126,7 +1293,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#ColumnScore">Column Score</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1138,7 +1305,9 @@
         </table>
     </div>
     <div class="entity property" id="hasFeature">
-        <h3>hasFeature<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasFeature<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasFeature" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1147,13 +1316,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1165,7 +1334,9 @@
         </table>
     </div>
     <div class="entity property" id="hasSequence">
-        <h3>hasSequence<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasSequence<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasSequence" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1174,13 +1345,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1192,7 +1363,9 @@
         </table>
     </div>
     <div class="entity property" id="hasSubalignment">
-        <h3>hasSubalignment<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>hasSubalignment<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#hasSubalignment" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1201,13 +1374,13 @@
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Alignment">Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1219,7 +1392,9 @@
         </table>
     </div>
     <div class="entity property" id="isColumnOf">
-        <h3>isColumnOf<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>isColumnOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isColumnOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1228,7 +1403,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1240,7 +1415,9 @@
         </table>
     </div>
     <div class="entity property" id="isFeatureOf">
-        <h3>isFeatureOf<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>isFeatureOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isFeatureOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1249,7 +1426,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1261,7 +1438,9 @@
         </table>
     </div>
     <div class="entity property" id="isSequenceOf">
-        <h3>isSequenceOf<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>isSequenceOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isSequenceOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1270,7 +1449,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1282,7 +1461,9 @@
         </table>
     </div>
     <div class="entity property" id="isSubalignmentOf">
-        <h3>isSubalignmentOf<sup title="object property" class="sup-op">op</sup></h3>
+        <h3>isSubalignmentOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isSubalignmentOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1291,7 +1472,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1307,35 +1488,37 @@
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#Recommended_Name">Protein recommended name</a></li>
-        <li><a href="#mnemonic">Mnemonic</a></li>
-        <li><a href="#FNote">Feature note</a></li>
-        <li><a href="#FScore">Feature score</a></li>
-        <li><a href="#FStart">Feature start</a></li>
-        <li><a href="#FStop">Feature stop</a></li>
-        <li><a href="#FType">Feature type</a></li>
-        <li><a href="#accessionNumber">Accession number</a></li>
-        <li><a href="#atSequenceIndex">Sequence index</a></li>
-        <li><a href="#column">Column</a></li>
-        <li><a href="#columnWeight">Column weight</a></li>
-        <li><a href="#consensusCharacter">Consensus character</a></li>
-        <li><a href="#description1">Description</a></li>
-        <li><a href="#gapCharacter">Gap character</a></li>
-        <li><a href="#geneName">Protein gene</a></li>
-        <li><a href="#identifier">Sequence Identifier</a></li>
-        <li><a href="#keyword">Keyword</a></li>
-        <li><a href="#length">Sequence length</a></li>
-        <li><a href="#organism">Sequence organism</a></li>
-        <li><a href="#proteinDescription">Protein description</a></li>
-        <li><a href="#proteinName">Protein name</a></li>
-        <li><a href="#score">Score</a></li>
-        <li><a href="#scoreMax">Score Max</a></li>
-        <li><a href="#scoreMin">Score Min</a></li>
-        <li><a href="#sequence">Sequence</a></li>
-        <li><a href="#subAlignmentName">SubAlignment name</a></li>
+        <li><a href="#Proteinrecommendedname">Protein recommended name</a></li>
+        <li><a href="#Mnemonic">Mnemonic</a></li>
+        <li><a href="#Featurenote">Feature note</a></li>
+        <li><a href="#Featurescore">Feature score</a></li>
+        <li><a href="#Featurestart">Feature start</a></li>
+        <li><a href="#Featurestop">Feature stop</a></li>
+        <li><a href="#Featuretype">Feature type</a></li>
+        <li><a href="#Accessionnumber">Accession number</a></li>
+        <li><a href="#Sequenceindex">Sequence index</a></li>
+        <li><a href="#Column">Column</a></li>
+        <li><a href="#Columnweight">Column weight</a></li>
+        <li><a href="#Consensuscharacter">Consensus character</a></li>
+        <li><a href="#Description">Description</a></li>
+        <li><a href="#Gapcharacter">Gap character</a></li>
+        <li><a href="#Proteingene">Protein gene</a></li>
+        <li><a href="#SequenceIdentifier">Sequence Identifier</a></li>
+        <li><a href="#Keyword">Keyword</a></li>
+        <li><a href="#Sequencelength">Sequence length</a></li>
+        <li><a href="#Sequenceorganism">Sequence organism</a></li>
+        <li><a href="#Proteindescription">Protein description</a></li>
+        <li><a href="#Proteinname">Protein name</a></li>
+        <li><a href="#Score">Score</a></li>
+        <li><a href="#ScoreMax">Score Max</a></li>
+        <li><a href="#ScoreMin">Score Min</a></li>
+        <li><a href="#Sequence">Sequence</a></li>
+        <li><a href="#SubAlignmentname">SubAlignment name</a></li>
     </ul>
-    <div class="entity property" id="Recommended_Name">
-        <h3>Protein recommended name<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Proteinrecommendedname">
+        <h3>Protein recommended name<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Proteinrecommendedname" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1344,13 +1527,15 @@
             <tr>
                 <th>Equivalent properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/proteinName">proteinName</a><sup class="sup-dp" title="datatype property">dp</sup>
+                    <a href="#Proteinname">Protein name</a><sup class="sup-dp" title="datatype property">dp</sup>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="mnemonic">
-        <h3>Mnemonic<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Mnemonic">
+        <h3>Mnemonic<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Mnemonic" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1359,13 +1544,15 @@
             <tr>
                 <th>Equivalent properties</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/accessionNumber">accessionNumber</a><sup class="sup-dp" title="datatype property">dp</sup>
+                    <a href="#Accessionnumber">Accession number</a><sup class="sup-dp" title="datatype property">dp</sup>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="FNote">
-        <h3>Feature note<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Featurenote">
+        <h3>Feature note<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Featurenote" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1374,7 +1561,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1385,8 +1572,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="FScore">
-        <h3>Feature score<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Featurescore">
+        <h3>Feature score<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Featurescore" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1395,20 +1584,22 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
+                    http://www.w3.org/2001/XMLSchema#float
+                    http://www.w3.org/2001/XMLSchema#integer
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="FStart">
-        <h3>Feature start<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Featurestart">
+        <h3>Feature start<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Featurestart" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1417,13 +1608,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The start position of the feature
+                    <p>The start position of the feature</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1434,8 +1625,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="FStop">
-        <h3>Feature stop<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Featurestop">
+        <h3>Feature stop<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Featurestop" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1444,13 +1637,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The end position of the feature
+                    <p>The end position of the feature</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1461,8 +1654,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="FType">
-        <h3>Feature type<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Featuretype">
+        <h3>Feature type<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Featuretype" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1471,7 +1666,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Feature">Feature</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1482,8 +1677,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="accessionNumber">
-        <h3>Accession number<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Accessionnumber">
+        <h3>Accession number<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Accessionnumber" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1492,13 +1689,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A unique identifier in the databases. Accession numbers should remain static between database updates.
+                    <p>A unique identifier in the databases. Accession numbers should remain static between database updates.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1509,8 +1706,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="atSequenceIndex">
-        <h3>Sequence index<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Sequenceindex">
+        <h3>Sequence index<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Sequenceindex" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1519,13 +1718,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The position of the column in the alignment.
+                    <p>The position of the column in the alignment.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1536,8 +1735,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="column">
-        <h3>Column<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Column">
+        <h3>Column<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Column" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1546,13 +1747,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    Alignment column data (one character for each sequence).
+                    <p>Alignment column data (one character for each sequence).</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1563,8 +1764,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="columnWeight">
-        <h3>Column weight<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Columnweight">
+        <h3>Column weight<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Columnweight" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1573,13 +1776,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A weight associated with a given column.
+                    <p>A weight associated with a given column.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1590,8 +1793,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="consensusCharacter">
-        <h3>Consensus character<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Consensuscharacter">
+        <h3>Consensus character<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Consensuscharacter" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1600,13 +1805,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A consensus character that summarises the residue information contained in an alignment column.
+                    <p>A consensus character that summarises the residue information contained in an alignment column.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentColumn">AlignmentColumn</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1617,8 +1822,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="description1">
-        <h3>Description<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Description">
+        <h3>Description<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Description" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1627,13 +1834,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A general description of the entity.
+                    <p>A general description of the entity.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1644,8 +1851,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="gapCharacter">
-        <h3>Gap character<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Gapcharacter">
+        <h3>Gap character<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Gapcharacter" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1654,7 +1863,7 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The character used to represent an insertion/deletion.
+                    <p>The character used to represent an insertion/deletion.</p>
                 </td>
             </tr>
             <tr>
@@ -1666,7 +1875,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1677,8 +1886,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="geneName">
-        <h3>Protein gene<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Proteingene">
+        <h3>Protein gene<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Proteingene" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1687,13 +1898,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The gene by which the protein is encoded.
+                    <p>The gene by which the protein is encoded.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1704,8 +1915,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="identifier">
-        <h3>Sequence Identifier<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="SequenceIdentifier">
+        <h3>Sequence Identifier<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#SequenceIdentifier" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1714,13 +1927,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The name or UID given to the sequence.
+                    <p>The name or UID given to the sequence.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1731,8 +1944,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="keyword">
-        <h3>Keyword<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Keyword">
+        <h3>Keyword<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Keyword" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1741,13 +1956,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A keyword provides information that can be used to generate indexes of the entries based on functional, structural, or other categories.
+                    <p>A keyword provides information that can be used to generate indexes of the entries based on functional, structural, or other categories.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup> or <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
@@ -1758,8 +1973,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="length">
-        <h3>Sequence length<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Sequencelength">
+        <h3>Sequence length<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Sequencelength" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1768,13 +1985,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The length of the sequence.
+                    <p>The length of the sequence.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1785,8 +2002,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="organism">
-        <h3>Sequence organism<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Sequenceorganism">
+        <h3>Sequence organism<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Sequenceorganism" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1795,13 +2014,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The unique identifier of the organism that was the source of the sequence by the NCBI.
+                    <p>The unique identifier of the organism that was the source of the sequence by the NCBI.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1812,8 +2031,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="proteinDescription">
-        <h3>Protein description<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Proteindescription">
+        <h3>Protein description<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Proteindescription" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1822,7 +2043,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1833,8 +2054,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="proteinName">
-        <h3>Protein name<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Proteinname">
+        <h3>Protein name<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Proteinname" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1843,13 +2066,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    Recommended name of the protein associated to the amino acid sequence.
+                    <p>Recommended name of the protein associated to the amino acid sequence.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/Protein">Protein</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1860,8 +2083,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="score">
-        <h3>Score<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Score">
+        <h3>Score<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Score" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1870,26 +2095,28 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    A score or metric computed for the alignment
+                    <p>A score or metric computed for the alignment</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScore">AlignmentScore</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScore">ColumnScore</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentScore">Alignment Score</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScore">Column Score</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
+                    http://www.w3.org/2001/XMLSchema#float
+                    http://www.w3.org/2001/XMLSchema#integer
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="scoreMax">
-        <h3>Score Max<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="ScoreMax">
+        <h3>Score Max<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#ScoreMax" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1898,20 +2125,22 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
+                    http://www.w3.org/2001/XMLSchema#float
+                    http://www.w3.org/2001/XMLSchema#integer
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="scoreMin">
-        <h3>Score Min<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="ScoreMin">
+        <h3>Score Min<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#ScoreMin" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1920,20 +2149,22 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    (<a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentScoreFunction">AlignmentScoreFunction</a><sup class="sup-c" title="class">c</sup> or <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ColumnScoreFunction">ColumnScoreFunction</a><sup class="sup-c" title="class">c</sup>)
+                    (<a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup> or <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup>)
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.w3.org/2001/XMLSchema#float">xsd:float</a><sup class="sup-c" title="class">c</sup>
-                    <a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a><sup class="sup-c" title="class">c</sup>
+                    http://www.w3.org/2001/XMLSchema#float
+                    http://www.w3.org/2001/XMLSchema#integer
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="sequence">
-        <h3>Sequence<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="Sequence">
+        <h3>Sequence<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Sequence" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1942,13 +2173,13 @@
             <tr>
                 <th>Description</th>
                 <td>
-                    The sequence itself, made up of residues and gap characters.
+                    <p>The sequence itself, made up of residues and gap characters.</p>
                 </td>
             </tr>
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/AlignmentSequence">AlignmentSequence</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1959,8 +2190,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="subAlignmentName">
-        <h3>SubAlignment name<sup title="datatype property" class="sup-dp">dp</sup></h3>
+    <div class="entity property" id="SubAlignmentname">
+        <h3>SubAlignment name<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#SubAlignmentname" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -1969,7 +2202,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a target="_parent" href="https://ontologies.khaos.uma.es/salon/SubAlignment">SubAlignment</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1995,16 +2228,19 @@
         <li><a href="#title">title</a></li>
         <li><a href="#preferredNamespacePrefix">preferredNamespacePrefix</a></li>
         <li><a href="#preferredNamespaceUri">preferredNamespaceUri</a></li>
+        <li><a href="#isRuleEnabled">isRuleEnabled</a></li>
         <li><a href="#versionInfo">versionInfo</a></li>
         <li><a href="#affiliation">affiliation</a></li>
         <li><a href="#codeRepository">codeRepository</a></li>
         <li><a href="#email">email</a></li>
-        <li><a href="#identifier1">identifier</a></li>
+        <li><a href="#identifier">identifier</a></li>
         <li><a href="#name">name</a></li>
         <li><a href="#url">url</a></li>
     </ul>
     <div class="entity property" id="created">
-        <h3>created<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>created<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#created" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2013,7 +2249,9 @@
         </table>
     </div>
     <div class="entity property" id="creator">
-        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>creator<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#creator" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2022,7 +2260,9 @@
         </table>
     </div>
     <div class="entity property" id="description">
-        <h3>description<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>description<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#description" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2031,7 +2271,9 @@
         </table>
     </div>
     <div class="entity property" id="modified">
-        <h3>modified<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>modified<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#modified" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2040,7 +2282,9 @@
         </table>
     </div>
     <div class="entity property" id="publisher">
-        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>publisher<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#publisher" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2049,7 +2293,9 @@
         </table>
     </div>
     <div class="entity property" id="rights">
-        <h3>rights<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>rights<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#rights" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2058,7 +2304,9 @@
         </table>
     </div>
     <div class="entity property" id="source">
-        <h3>source<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>source<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#source" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2067,7 +2315,9 @@
         </table>
     </div>
     <div class="entity property" id="title">
-        <h3>title<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>title<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#title" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2076,7 +2326,9 @@
         </table>
     </div>
     <div class="entity property" id="preferredNamespacePrefix">
-        <h3>preferredNamespacePrefix<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>preferredNamespacePrefix<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#preferredNamespacePrefix" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2085,7 +2337,9 @@
         </table>
     </div>
     <div class="entity property" id="preferredNamespaceUri">
-        <h3>preferredNamespaceUri<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>preferredNamespaceUri<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#preferredNamespaceUri" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2093,8 +2347,21 @@
             </tr>
         </table>
     </div>
+    <div class="entity property" id="isRuleEnabled">
+        <h3>isRuleEnabled<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#isRuleEnabled" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="versionInfo">
-        <h3>versionInfo<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>versionInfo<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#versionInfo" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2103,7 +2370,9 @@
         </table>
     </div>
     <div class="entity property" id="affiliation">
-        <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>affiliation<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#affiliation" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2112,7 +2381,9 @@
         </table>
     </div>
     <div class="entity property" id="codeRepository">
-        <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>codeRepository<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#codeRepository" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2121,7 +2392,9 @@
         </table>
     </div>
     <div class="entity property" id="email">
-        <h3>email<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>email<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#email" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2129,8 +2402,10 @@
             </tr>
         </table>
     </div>
-    <div class="entity property" id="identifier1">
-        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup></h3>
+    <div class="entity property" id="identifier">
+        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#identifier" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2139,7 +2414,9 @@
         </table>
     </div>
     <div class="entity property" id="name">
-        <h3>name<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>name<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#name" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2148,7 +2425,9 @@
         </table>
     </div>
     <div class="entity property" id="url">
-        <h3>url<sup title="annotation property" class="sup-ap">ap</sup></h3>
+        <h3>url<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#url" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
         <table>
             <tr>
                 <th>URI</th>
@@ -2159,26 +2438,26 @@
 </section>
 
   
-  <section id="namedindividuals">
-    <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#AlignmentScoreTC">AlignmentScoreTC</a></li>
-        <li><a href="#BLAST">BLAST</a></li>
-        <li><a href="#ClustalW">ClustalW</a></li>
-        <li><a href="#ColumnScoreNongapsPercentage">ColumnScoreNongapsPercentage</a></li>
-        <li><a href="#ColumnScoreSOP">ColumnScoreSOP</a></li>
-        <li><a href="#ColumnScoreShannonEntropy">ColumnScoreShannonEntropy</a></li>
-        <li><a href="#ColumnScoreTC">ColumnScoreTC</a></li>
-        <li><a href="#DynamicProgramming">Dynamic programming</a></li>
-        <li><a href="#KAlign">KAlign</a></li>
-        <li><a href="#MAFFT">MAFFT</a></li>
-        <li><a href="#MUMMALS">MUMMALS</a></li>
-        <li><a href="#MUSLCLE">MUSLCLE</a></li>
-        <li><a href="#PRIME">PRIME</a></li>
-        <li><a href="#SATCHMO">SATCHMO</a></li>
-        <li><a href="#T-Coffee">T-Coffee</a></li>
-    </ul>
-    <div class="entity named_individual" id="AlignmentScoreTC">
+    <section id="namedindividuals">
+        <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+        <ul class="hlist">
+            <li><a href="#AlignmentScoreTC">AlignmentScoreTC</a></li>
+            <li><a href="#BLAST">BLAST</a></li>
+            <li><a href="#ClustalW">ClustalW</a></li>
+            <li><a href="#ColumnScoreNongapsPercentage">ColumnScoreNongapsPercentage</a></li>
+            <li><a href="#ColumnScoreSOP">ColumnScoreSOP</a></li>
+            <li><a href="#ColumnScoreShannonEntropy">ColumnScoreShannonEntropy</a></li>
+            <li><a href="#ColumnScoreTC">ColumnScoreTC</a></li>
+            <li><a href="#Dynamicprogramming">Dynamic programming</a></li>
+            <li><a href="#KAlign">KAlign</a></li>
+            <li><a href="#MAFFT">MAFFT</a></li>
+            <li><a href="#MUMMALS">MUMMALS</a></li>
+            <li><a href="#MUSLCLE">MUSLCLE</a></li>
+            <li><a href="#PRIME">PRIME</a></li>
+            <li><a href="#SATCHMO">SATCHMO</a></li>
+            <li><a href="#T-Coffee">T-Coffee</a></li>
+        </ul>
+            <div class="entity named_individual" id="AlignmentScoreTC">
         <h3>AlignmentScoreTC<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2190,13 +2469,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationAlignmentScoreFunction">MaximizationAlignmentScoreFunction</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="BLAST">
+            <div class="entity named_individual" id="BLAST">
         <h3>BLAST<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2208,13 +2487,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MasterSlaveMethod">MasterSlaveMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="ClustalW">
+            <div class="entity named_individual" id="ClustalW">
         <h3>ClustalW<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2226,13 +2505,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="ColumnScoreNongapsPercentage">
+            <div class="entity named_individual" id="ColumnScoreNongapsPercentage">
         <h3>ColumnScoreNongapsPercentage<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2244,13 +2523,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="ColumnScoreSOP">
+            <div class="entity named_individual" id="ColumnScoreSOP">
         <h3>ColumnScoreSOP<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2262,13 +2541,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="ColumnScoreShannonEntropy">
+            <div class="entity named_individual" id="ColumnScoreShannonEntropy">
         <h3>ColumnScoreShannonEntropy<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2280,7 +2559,7 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction">MinimizationColumnScoreFunction</a><br/>
             </dd>
@@ -2292,7 +2571,7 @@
             </tr>
         </table>
     </div>
-    <div class="entity named_individual" id="ColumnScoreTC">
+            <div class="entity named_individual" id="ColumnScoreTC">
         <h3>ColumnScoreTC<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2304,13 +2583,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction">MaximizationColumnScoreFunction</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="DynamicProgramming">
+            <div class="entity named_individual" id="Dynamicprogramming">
         <h3>Dynamic programming<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2322,13 +2601,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ConstructionMethod">ConstructionMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="KAlign">
+            <div class="entity named_individual" id="KAlign">
         <h3>KAlign<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2340,13 +2619,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="MAFFT">
+            <div class="entity named_individual" id="MAFFT">
         <h3>MAFFT<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2358,13 +2637,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="MUMMALS">
+            <div class="entity named_individual" id="MUMMALS">
         <h3>MUMMALS<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2376,13 +2655,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/HiddenMarkovModel">HiddenMarkovModel</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="MUSLCLE">
+            <div class="entity named_individual" id="MUSLCLE">
         <h3>MUSLCLE<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2394,13 +2673,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="PRIME">
+            <div class="entity named_individual" id="PRIME">
         <h3>PRIME<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2412,13 +2691,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/IterativeMethod">IterativeMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="SATCHMO">
+            <div class="entity named_individual" id="SATCHMO">
         <h3>SATCHMO<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2430,13 +2709,13 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
-    <div class="entity named_individual" id="T-Coffee">
+            <div class="entity named_individual" id="T-Coffee">
         <h3>T-Coffee<sup title="named individual" class="sup-ni">ni</sup></h3>
         <table>
             <tr>
@@ -2448,18 +2727,18 @@
                   </code>
                 </td>
             </tr>
-            <dt>Classes(s)</dt>
+            <dt>Class(es)</dt>
             <dd>
                 <a target="_parent" href="https://ontologies.khaos.uma.es/salon/ProgressiveMethod">ProgressiveMethod</a><br/>
             </dd>
         </table>
     </div>
-</section>
-  
+    </section>
+
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
-        <dt>:</dt>
+        <dt>default (salon)</dt>
         <dd><code>http://www.ontologies.khaos.uma.es/salon/</code></dd>
         <dt>dct</dt>
         <dd><code>http://purl.org/dc/terms/</code></dd>
@@ -2477,6 +2756,14 @@
         <dd><code>https://schema.org/</code></dd>
         <dt>skos</dt>
         <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>swrl</dt>
+        <dd><code>http://www.w3.org/2003/11/swrl#</code></dd>
+        <dt>swrla</dt>
+        <dd><code>http://swrl.stanford.edu/ontologies/3.3/swrla.owl#</code></dd>
+        <dt>swrlb</dt>
+        <dd><code>http://www.w3.org/2003/11/swrlb#</code></dd>
+        <dt>uniprot</dt>
+        <dd><code>http://purl.uniprot.org/core/</code></dd>
         <dt>vann</dt>
         <dd><code>http://purl.org/vocab/vann/</code></dd>
         <dt>xsd</dt>
