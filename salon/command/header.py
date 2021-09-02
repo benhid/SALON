@@ -1,8 +1,7 @@
 import click
 
-from salon.database.stardog import Stardog
-
 from salon.config import settings
+from salon.database.stardog import Stardog
 
 
 @click.command()
@@ -11,20 +10,25 @@ from salon.config import settings
     "-x",
     help="Protein alignment sequence URI.",
 )
-def export(uri: str):
+def header(uri: str):
     """
     Returns FASTA description line for a protein sequence in the ontology.
     """
-    query = """
+    query = (
+        """
         PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
         PREFIX skos:<http://www.w3.org/2004/02/skos/core#> 
         PREFIX up:<http://purl.uniprot.org/core/>
-        PREFIX salon:<"""+settings.ONTOLOGY_IRI+"""">
+        PREFIX salon:<"""
+        + settings.ONTOLOGY_IRI
+        + """">
         SELECT DISTINCT ?db ?UniqueIdentifier ?EntryName 
                ?OrganismName ?OrganismIdentifier ?ProteinName 
                ?GeneName ?ProteinExistence
         WHERE{
-            <""" + uri + """> a salon:ProteinAlignmentSequence ;
+            <"""
+        + uri
+        + """> a salon:ProteinAlignmentSequence ;
                               salon:identifier ?UniqueIdentifier ;
                               salon:organism ?OrganismIdentifier ;
                               salon:associatedTo ?protein .
@@ -44,6 +48,7 @@ def export(uri: str):
             }
         }
     """
+    )
     management = Stardog(
         endpoint=settings.STARDOG_ENDPOINT,
         database=settings.STARDOG_DATABASE,
@@ -53,7 +58,7 @@ def export(uri: str):
     res = management.query(query)
 
     try:
-        bindings = res['results']['bindings']
+        bindings = res["results"]["bindings"]
     except IndexError:
         bindings = {}
 
@@ -76,7 +81,7 @@ def export(uri: str):
         protein_existence = seq["ProteinExistence"]["value"]
         protein_existence = mapping[protein_existence]
 
-        # UniprotKb FASTA header specification
+        # UniprotKb template FASTA header specification
         template = (
             f">{db}|{unique_identifier}|{entry_name} {protein_name} "
             f"OS={organism_name} OX={organism_identifier} GN={gene_name} PE={protein_existence}"
@@ -87,4 +92,4 @@ def export(uri: str):
 
 
 if __name__ == "__main__":
-    export()
+    header()

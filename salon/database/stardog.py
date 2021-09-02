@@ -1,14 +1,20 @@
 import json
 
 import requests
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import JSON, SPARQLWrapper
 
 from salon.database.repository import RDFRepository
 
 
 class Stardog(RDFRepository):
+    """
+    SPARQLWrapper for Stardog graph store.
+    """
 
-    def setup_database(self, filename: str):
+    def init(self, filename: str):
+        """
+        Initialize the database by creating the required schema.
+        """
         session = requests.Session()
         session.auth = (self.username, self.password)
 

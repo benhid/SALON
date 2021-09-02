@@ -3,7 +3,7 @@ from pathlib import Path
 
 import click
 from Bio import AlignIO
-from rdflib import Graph, RDF, Literal, URIRef, Namespace
+from rdflib import RDF, Graph, Literal, Namespace, URIRef
 
 from salon.config import settings
 
@@ -14,7 +14,7 @@ except ImportError:
 
 
 def _etree_to_dict(t):
-    """ Transform an XML to a Python dictionary. """
+    """Transform an XML to a Python dictionary."""
     d = {t.tag: {} if t.attrib else None}
     children = list(t)
     if children:
@@ -149,7 +149,7 @@ def from_fasta(filepath: str) -> Graph:
         graph.add((subalignment_uri, namespace.hasSequence, seq_uri))
         graph.add((seq_uri, namespace.identifier, Literal(record.name)))
 
-        if True:  # todo check if protein or dna
+        if True:  # TODO: check if protein or dna
             graph.add((seq_uri, RDF.type, namespace.ProteinAlignmentSequence))
 
         graph.add((seq_uri, namespace.sequence, Literal(record.seq.upper())))

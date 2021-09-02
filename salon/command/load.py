@@ -13,9 +13,9 @@ from salon.database.stardog import Stardog
     "-i",
     help="Create database.",
 )
-def create(filename: str):
+def init(filename: str):
     """
-    Creates the database.
+    Initialise the database.
     """
     management = Stardog(
         endpoint=settings.STARDOG_ENDPOINT,
@@ -23,7 +23,7 @@ def create(filename: str):
         username=settings.STARDOG_USERNAME,
         password=settings.STARDOG_PASSWORD,
     )
-    management.setup_database(filename=filename)
+    management.init(filename=filename)
 
 
 @click.command()
@@ -49,11 +49,10 @@ def load(filename: str):
     graph.parse(location=filename, format=file_extension)
     graph_as_ttl = graph.serialize(format="nt").decode("UTF-8")
 
-    # management.update("DROP SILENT GRAPH <salon>")
-
     if isinstance(management, Stardog):
         query_string = "INSERT DATA { " + graph_as_ttl + " }"
     else:
+        # TODO: Add support for other databases, e.g. Virtuoso.
         query_string = "INSERT DATA { GRAPH { " + management.database + " } " + graph_as_ttl + " }"
 
     management.update(query_string)

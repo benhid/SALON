@@ -1,8 +1,7 @@
 import click
 
-from salon.database.stardog import Stardog
-
 from salon.config import settings
+from salon.database.stardog import Stardog
 
 try:
     import xml.etree.cElementTree as ET
@@ -19,11 +18,13 @@ except ImportError:
 def enrich(uri: str):
     """
     Adds information to sequences in the database following the ontology specification.
-    This function ONLY WORKS for *protein sequences*.
+    TODO: This function ONLY WORKS for *protein sequences*.
     """
     query = (
         """
-        PREFIX salon:<"""+settings.ONTOLOGY_IRI+"""">
+        PREFIX salon:<"""
+        + settings.ONTOLOGY_IRI
+        + """>
         SELECT ?ac
         WHERE {
             <"""
@@ -45,14 +46,15 @@ def enrich(uri: str):
     res = management.query(query)
 
     try:
-        bindings = res['results']['bindings'][0]
+        # TODO: Only the first ocurrence?
+        bindings = res["results"]["bindings"][0]
     except IndexError:
         print(f"Accession number not found for sequence {uri}")
-        bindings = {}
+        return
 
     # We _assume_ that the ac number is linked to the PDB identifier of the sequence's protein
-    pdb = bindings.get("ac", None)
-    pdb_value = pdb["value"]
+    pdb = bindings["ac"]
+    pdb_value = pdb.get("value")
 
     if pdb_value:
         query = (
@@ -60,7 +62,9 @@ def enrich(uri: str):
             PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
             PREFIX up:<http://purl.uniprot.org/core/>
             PREFIX pdb:<http://rdf.wwpdb.org/pdb/>
-            PREFIX salon:<"""+settings.ONTOLOGY_IRI+"""">
+            PREFIX salon:<"""
+            + settings.ONTOLOGY_IRI
+            + """>
             INSERT {
                 <"""
             + uri
