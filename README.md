@@ -66,12 +66,12 @@ $ saloncli load -i examples/BB11001.ttl
 
 Enriches protein sequence given its URI
 ```shell
-$ saloncli enrich -x https://w3id.org/salon/BB11001_1aab_
+$ saloncli enrich -x https://w3id.org/salon#BB11001_1aab_
 ```
 
 Generates UniprotKB FASTA header/description line for protein sequence given its URI
 ```shell
-$ saloncli header -x https://w3id.org/salon/BB11001_1aab_
+$ saloncli header -x https://w3id.org/salon#BB11001_1aab_
 ```
 
 ### 📖 Documentation

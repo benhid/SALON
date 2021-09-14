@@ -37,9 +37,9 @@
                         <sdo:url rdf:resource="https://www.uma.es/"/>
                     </rdf:Description>
                 </sdo:affiliation>
-                <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-                <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-                <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+                <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+                <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+                <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
             </rdf:Description>
         </dct:creator>
         <dct:creator>
@@ -50,9 +50,9 @@
                         <sdo:url rdf:resource="https://www.uma.es/"/>
                     </rdf:Description>
                 </sdo:affiliation>
-                <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-                <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-                <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+                <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+                <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+                <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
             </rdf:Description>
         </dct:creator>
         <dct:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://opensource.org/licenses/MIT</dct:license>
@@ -212,6 +212,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#associatedTo">
         <rdfs:domain rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#Protein"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associated To</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -221,6 +222,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#constructionMethod">
         <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#ConstructionMethod"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construction Method</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -230,6 +232,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasAlignmentScore">
         <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentScore"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Alignment Score</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -239,6 +242,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasAlignmentScoreFunction">
         <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentScore"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentScoreFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Alignment Score Function</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -249,6 +253,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/salon#isColumnOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Column</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -258,6 +263,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasColumnScore">
         <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Column Score</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -267,6 +273,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasColumnScoreFunction">
         <rdfs:domain rdf:resource="https://w3id.org/salon#ColumnScore"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#ColumnScoreFunction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Column Score Function</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -277,6 +284,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/salon#isFeatureOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#Feature"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -287,6 +295,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/salon#isSequenceOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Sequence</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -297,6 +306,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/salon#isSubalignmentOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Subalignment</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -306,6 +316,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#isColumnOf">
         <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Column Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -315,6 +326,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#isFeatureOf">
         <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Feature Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -324,6 +336,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#isSequenceOf">
         <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Sequence Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -333,6 +346,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/salon#isSubalignmentOf">
         <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
         <rdfs:range rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Subalignment Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1152,28 +1166,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
@@ -1187,17 +1179,6 @@
         </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1209,68 +1190,6 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1311,9 +1230,18 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1325,6 +1253,16 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1366,9 +1304,8 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1399,6 +1336,61 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
@@ -1412,6 +1404,60 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1504,105 +1550,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/salon#amax">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment incorrectness</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#Alignment"/>
-                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScore"/>
-                                <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
-                                <swrl:argument2 rdf:resource="https://w3id.org/salon#as"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#score"/>
-                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
-                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#asc"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScoreFunction"/>
-                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
-                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#asf"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMin"/>
-                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#asf"/>
-                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#amin"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                                                <swrl:arguments rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="https://w3id.org/salon#asc"/>
-                                                                    <rdf:Description rdf:about="https://w3id.org/salon#amin"/>
-                                                                </swrl:arguments>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#NotCorrectAlignment"/>
-                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1832,6 +1779,105 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
                         <swrl:classPredicate rdf:resource="https://w3id.org/salon#CorrectAlignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment incorrectness</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#Alignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScore"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/salon#as"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#score"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#asc"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScoreFunction"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#asf"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMin"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#asf"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#amin"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="https://w3id.org/salon#asc"/>
+                                                                    <rdf:Description rdf:about="https://w3id.org/salon#amin"/>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#NotCorrectAlignment"/>
                         <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
                     </rdf:Description>
                 </rdf:first>
