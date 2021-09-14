@@ -2,7 +2,7 @@ from pydantic import BaseSettings
 
 
 class _BaseSettings(BaseSettings):
-    ONTOLOGY_IRI: str = "http://www.ontologies.khaos.uma.es/salon/"
+    ONTOLOGY_IRI: str = "https://w3id.org/salon#"
     ONTOLOGY_NAMESPACE: str = "salon"
 
     STARDOG_ENDPOINT: str = "http://localhost:5820"

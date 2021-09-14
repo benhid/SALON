@@ -1,6 +1,6 @@
 # SALON - [Sequence ALignment ONtology](https://github.com/benhid/SALON)
 
-[![Explore ontology](https://img.shields.io/badge/docs-Documentation-orange.svg?style=flat-square)](https://benhid.github.io/SALON/index.html)
+[![Explore ontology](https://img.shields.io/badge/docs-Documentation-orange.svg?style=flat-square)](https://w3id.org/salon/)
 
 ### ✨ Ontology 
 
@@ -8,11 +8,15 @@
 
 You can directly load the ontology in Protégé using the provided URI:
 
-> http://www.ontologies.khaos.uma.es/salon/
+> https://w3id.org/salon/
 
 ### 🧰 Client
 
-**Note**: Unlike Virtuoso, [Stardog](https://www.stardog.com/) supports SWRL rules (which this ontology makes use of). Therefore, this tool requires a running Stardog server instance to unlock all features, albeit Virtuoso or any other triple store can be used.
+**Note**: Unlike Virtuoso, [Stardog](https://www.stardog.com/) supports SWRL rules (which this ontology makes use of). Therefore, this tool requires a running Stardog server instance to unlock all features, albeit Virtuoso or any other triple store can be used. You can deploy Stardog on Docker with:
+
+```shell
+$ docker run -it -v ~/your/license/folder/:/var/opt/stardog -p 5820:5820 stardog/stardog
+```
 
 #### Installation
 
@@ -62,12 +66,12 @@ $ saloncli load -i examples/BB11001.ttl
 
 Enriches protein sequence given its URI
 ```shell
-$ saloncli enrich -x http://www.ontologies.khaos.uma.es/salon/BB11001_1aab_
+$ saloncli enrich -x https://w3id.org/salon/BB11001_1aab_
 ```
 
 Generates UniprotKB FASTA header/description line for protein sequence given its URI
 ```shell
-$ saloncli header -x http://www.ontologies.khaos.uma.es/salon/BB11001_1aab_
+$ saloncli header -x https://w3id.org/salon/BB11001_1aab_
 ```
 
 ### 📖 Documentation

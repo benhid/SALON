@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ontologies.khaos.uma.es/salon/"
-     xml:base="http://www.ontologies.khaos.uma.es/salon/"
+<rdf:RDF xmlns="https://w3id.org/salon#"
+     xml:base="https://w3id.org/salon"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,10 +11,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:salon="http://www.ontologies.khaos.uma.es/salon/"
+     xmlns:salon="https://w3id.org/salon#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="http://www.ontologies.khaos.uma.es/salon/">
+    <owl:Ontology rdf:about="https://w3id.org/salon#">
+        <owl:versionIRI rdf:resource="https://w3id.org/salon#/1.0.0"/>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-01T23:59:59</dct:created>
         <dct:creator>
             <rdf:Description>
@@ -54,16 +55,17 @@
                 <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
             </rdf:Description>
         </dct:creator>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-02T23:59:59</dct:modified>
+        <dct:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://opensource.org/licenses/MIT</dct:license>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-14T10:21:00</dct:modified>
         <dct:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaos Research Group</dct:publisher>
         <dct:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(c) Khaos Research Group, University of Málaga</dct:rights>
         <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Pairwise and Multiple Sequence ALignment ONtology</dct:title>
         <dct:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</dct:title>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">salon</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://www.ontologies.khaos.uma.es/salon/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://w3id.org/salon#</vann:preferredNamespaceUri>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Sequence ALingment Ontology for pairwise and multiple sequence alignments</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON - Pairwise and Multiple Sequence ALignment ONtology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V1.0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V1.0.0</owl:versionInfo>
         <sdo:codeRepository rdf:resource="https://github.com/benhid/SALON"/>
     </owl:Ontology>
     
@@ -95,6 +97,12 @@
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -199,132 +207,132 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/associatedTo -->
+    <!-- https://w3id.org/salon#associatedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/associatedTo">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/ProteinAlignmentSequence"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#associatedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#Protein"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/constructionMethod -->
+    <!-- https://w3id.org/salon#constructionMethod -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/constructionMethod">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/ConstructionMethod"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#constructionMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#ConstructionMethod"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore -->
+    <!-- https://w3id.org/salon#hasAlignmentScore -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScore"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasAlignmentScore">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentScore"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction -->
+    <!-- https://w3id.org/salon#hasAlignmentScoreFunction -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScore"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasAlignmentScoreFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentScore"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentScoreFunction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasColumn -->
+    <!-- https://w3id.org/salon#hasColumn -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasColumn">
-        <owl:inverseOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/isColumnOf"/>
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasColumn">
+        <owl:inverseOf rdf:resource="https://w3id.org/salon#isColumnOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasColumnScore -->
+    <!-- https://w3id.org/salon#hasColumnScore -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasColumnScore">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScore"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasColumnScore">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#ColumnScore"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction -->
+    <!-- https://w3id.org/salon#hasColumnScoreFunction -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScore"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasColumnScoreFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#ColumnScoreFunction"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasFeature -->
+    <!-- https://w3id.org/salon#hasFeature -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasFeature">
-        <owl:inverseOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/isFeatureOf"/>
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasFeature">
+        <owl:inverseOf rdf:resource="https://w3id.org/salon#isFeatureOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#Feature"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasSequence -->
+    <!-- https://w3id.org/salon#hasSequence -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasSequence">
-        <owl:inverseOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/isSequenceOf"/>
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasSequence">
+        <owl:inverseOf rdf:resource="https://w3id.org/salon#isSequenceOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/hasSubalignment -->
+    <!-- https://w3id.org/salon#hasSubalignment -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/hasSubalignment">
-        <owl:inverseOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/isSubalignmentOf"/>
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#hasSubalignment">
+        <owl:inverseOf rdf:resource="https://w3id.org/salon#isSubalignmentOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#SubAlignment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/isColumnOf -->
+    <!-- https://w3id.org/salon#isColumnOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/isColumnOf">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#isColumnOf">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#Alignment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/isFeatureOf -->
+    <!-- https://w3id.org/salon#isFeatureOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/isFeatureOf">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#isFeatureOf">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/isSequenceOf -->
+    <!-- https://w3id.org/salon#isSequenceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/isSequenceOf">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#isSequenceOf">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#SubAlignment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/isSubalignmentOf -->
+    <!-- https://w3id.org/salon#isSubalignmentOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/isSubalignmentOf">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
-        <rdfs:range rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/salon#isSubalignmentOf">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon#Alignment"/>
     </owl:ObjectProperty>
     
 
@@ -343,7 +351,7 @@
     <!-- http://purl.uniprot.org/core/Recommended_Name -->
 
     <owl:DatatypeProperty rdf:about="http://purl.uniprot.org/core/Recommended_Name">
-        <owl:equivalentProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/proteinName"/>
+        <owl:equivalentProperty rdf:resource="https://w3id.org/salon#proteinName"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein recommended name</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -352,26 +360,26 @@
     <!-- http://purl.uniprot.org/core/mnemonic -->
 
     <owl:DatatypeProperty rdf:about="http://purl.uniprot.org/core/mnemonic">
-        <owl:equivalentProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/accessionNumber"/>
+        <owl:equivalentProperty rdf:resource="https://w3id.org/salon#accessionNumber"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mnemonic</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/FNote -->
+    <!-- https://w3id.org/salon#FNote -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/FNote">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#FNote">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature note</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/FScore -->
+    <!-- https://w3id.org/salon#FScore -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/FScore">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#FScore">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:unionOf rdf:parseType="Collection">
@@ -385,10 +393,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/FStart -->
+    <!-- https://w3id.org/salon#FStart -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/FStart">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#FStart">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The start position of the feature</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature start</rdfs:label>
@@ -396,10 +404,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/FStop -->
+    <!-- https://w3id.org/salon#FStop -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/FStop">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#FStop">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The end position of the feature</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature stop</rdfs:label>
@@ -407,24 +415,24 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/FType -->
+    <!-- https://w3id.org/salon#FType -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/FType">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#FType">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Feature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature type</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/accessionNumber -->
+    <!-- https://w3id.org/salon#accessionNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/accessionNumber">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#accessionNumber">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentSequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#Protein"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -435,10 +443,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/atSequenceIndex -->
+    <!-- https://w3id.org/salon#atSequenceIndex -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/atSequenceIndex">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#atSequenceIndex">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment>The position of the column in the alignment.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence index</rdfs:label>
@@ -446,10 +454,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/column -->
+    <!-- https://w3id.org/salon#column -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/column">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#column">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment column data (one character for each sequence).</rdfs:comment>
         <rdfs:label>Column</rdfs:label>
@@ -457,10 +465,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/columnWeight -->
+    <!-- https://w3id.org/salon#columnWeight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/columnWeight">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#columnWeight">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A weight associated with a given column.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column weight</rdfs:label>
@@ -468,10 +476,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/consensusCharacter -->
+    <!-- https://w3id.org/salon#consensusCharacter -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/consensusCharacter">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#consensusCharacter">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>A consensus character that summarises the residue information contained in an alignment column.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consensus character</rdfs:label>
@@ -479,14 +487,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/description -->
+    <!-- https://w3id.org/salon#description -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/description">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#description">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentSequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#Protein"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -497,11 +505,11 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/gapCharacter -->
+    <!-- https://w3id.org/salon#gapCharacter -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/gapCharacter">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#gapCharacter">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
+        <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
         <rdfs:comment>The character used to represent an insertion/deletion.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gap character</rdfs:label>
@@ -509,10 +517,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/geneName -->
+    <!-- https://w3id.org/salon#geneName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/geneName">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#geneName">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Protein"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The gene by which the protein is encoded.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein gene</rdfs:label>
@@ -520,10 +528,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/identifier -->
+    <!-- https://w3id.org/salon#identifier -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/identifier">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#identifier">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The name or UID given to the sequence.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence Identifier</rdfs:label>
@@ -531,14 +539,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/keyword -->
+    <!-- https://w3id.org/salon#keyword -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/keyword">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#keyword">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentSequence"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#Protein"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -549,10 +557,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/length -->
+    <!-- https://w3id.org/salon#length -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/length">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#length">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>The length of the sequence.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence length</rdfs:label>
@@ -560,10 +568,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/organism -->
+    <!-- https://w3id.org/salon#organism -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/organism">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#organism">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The unique identifier of the organism that was the source of the sequence by the NCBI.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence organism</rdfs:label>
@@ -571,20 +579,20 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/proteinDescription -->
+    <!-- https://w3id.org/salon#proteinDescription -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/proteinDescription">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#proteinDescription">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Protein"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein description</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/proteinName -->
+    <!-- https://w3id.org/salon#proteinName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/proteinName">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#proteinName">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#Protein"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommended name of the protein associated to the amino acid sequence.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein name</rdfs:label>
@@ -592,14 +600,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/score -->
+    <!-- https://w3id.org/salon#score -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/score">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#score">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScore"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScore"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentScore"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#ColumnScore"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -617,14 +625,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/scoreMax -->
+    <!-- https://w3id.org/salon#scoreMax -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/scoreMax">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#scoreMax">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentScoreFunction"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#ColumnScoreFunction"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -641,14 +649,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/scoreMin -->
+    <!-- https://w3id.org/salon#scoreMin -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/scoreMin">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#scoreMin">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
-                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#AlignmentScoreFunction"/>
+                    <rdf:Description rdf:about="https://w3id.org/salon#ColumnScoreFunction"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -665,10 +673,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/sequence -->
+    <!-- https://w3id.org/salon#sequence -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/sequence">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#sequence">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The sequence itself, made up of residues and gap characters.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence</rdfs:label>
@@ -676,10 +684,10 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/subAlignmentName -->
+    <!-- https://w3id.org/salon#subAlignmentName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontologies.khaos.uma.es/salon/subAlignmentName">
-        <rdfs:domain rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/salon#subAlignmentName">
+        <rdfs:domain rdf:resource="https://w3id.org/salon#SubAlignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SubAlignment name</rdfs:label>
     </owl:DatatypeProperty>
@@ -697,25 +705,25 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/Alignment -->
+    <!-- https://w3id.org/salon#Alignment -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/Alignment">
+    <owl:Class rdf:about="https://w3id.org/salon#Alignment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScore"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasAlignmentScore"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#AlignmentScore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumn"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasColumn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasSubalignment"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/SubAlignment"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasSubalignment"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#SubAlignment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of biological sequences, used to identify regions of similarity that may indicate functional, structural and/or evolutionary relationships between them.</rdfs:comment>
@@ -724,13 +732,13 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/AlignmentColumn -->
+    <!-- https://w3id.org/salon#AlignmentColumn -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentColumn">
+    <owl:Class rdf:about="https://w3id.org/salon#AlignmentColumn">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScore"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScore"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasColumnScore"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#ColumnScore"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of a column in the alignment. Note that a column with all gaps is not allowed.</rdfs:comment>
@@ -739,14 +747,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/AlignmentScore -->
+    <!-- https://w3id.org/salon#AlignmentScore -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScore">
+    <owl:Class rdf:about="https://w3id.org/salon#AlignmentScore">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasColumnScoreFunction"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
+                <owl:onClass rdf:resource="https://w3id.org/salon#AlignmentScoreFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A score given to the alignment.</rdfs:comment>
@@ -755,22 +763,22 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction -->
+    <!-- https://w3id.org/salon#AlignmentScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction">
+    <owl:Class rdf:about="https://w3id.org/salon#AlignmentScoreFunction">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The method used to calculate the scoring function.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alignment Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/AlignmentSequence -->
+    <!-- https://w3id.org/salon#AlignmentSequence -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence">
+    <owl:Class rdf:about="https://w3id.org/salon#AlignmentSequence">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasFeature"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/Feature"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasFeature"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#Feature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ordered succession of residues and gap characters in a sequence. For proteins, this is known as the primary structure.</rdfs:comment>
@@ -779,14 +787,14 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScore -->
+    <!-- https://w3id.org/salon#ColumnScore -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScore">
+    <owl:Class rdf:about="https://w3id.org/salon#ColumnScore">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasColumnScoreFunction"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+                <owl:onClass rdf:resource="https://w3id.org/salon#ColumnScoreFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A score given to a single column.</rdfs:comment>
@@ -795,176 +803,176 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction -->
+    <!-- https://w3id.org/salon#ColumnScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction">
+    <owl:Class rdf:about="https://w3id.org/salon#ColumnScoreFunction">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The method used to calculate the scoring function for a given column.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ConstructionMethod -->
+    <!-- https://w3id.org/salon#ConstructionMethod -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/ConstructionMethod">
+    <owl:Class rdf:about="https://w3id.org/salon#ConstructionMethod">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The method or algorithm used to construct the sequence alignment.</rdfs:comment>
         <rdfs:label>Construction Method</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/CorrectAlignment -->
+    <!-- https://w3id.org/salon#CorrectAlignment -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/CorrectAlignment">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+    <owl:Class rdf:about="https://w3id.org/salon#CorrectAlignment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#Alignment"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correct Alignment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/DNAAlignmentSequence -->
+    <!-- https://w3id.org/salon#DNAAlignmentSequence -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/DNAAlignmentSequence">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:Class rdf:about="https://w3id.org/salon#DNAAlignmentSequence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA Sequence</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/DeterministicApproach -->
+    <!-- https://w3id.org/salon#DeterministicApproach -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/DeterministicApproach">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/ConstructionMethod"/>
+    <owl:Class rdf:about="https://w3id.org/salon#DeterministicApproach">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#ConstructionMethod"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deterministic Approach</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/EvolutionaryAlgorithm -->
+    <!-- https://w3id.org/salon#EvolutionaryAlgorithm -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/EvolutionaryAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/StochasticApproach"/>
+    <owl:Class rdf:about="https://w3id.org/salon#EvolutionaryAlgorithm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#StochasticApproach"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evolutionary algorithm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/Feature -->
+    <!-- https://w3id.org/salon#Feature -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/Feature">
+    <owl:Class rdf:about="https://w3id.org/salon#Feature">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence features.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/Genetic_Algorithm -->
+    <!-- https://w3id.org/salon#Genetic_Algorithm -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/Genetic_Algorithm">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/EvolutionaryAlgorithm"/>
+    <owl:Class rdf:about="https://w3id.org/salon#Genetic_Algorithm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#EvolutionaryAlgorithm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic Algorithm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/HiddenMarkovModel -->
+    <!-- https://w3id.org/salon#HiddenMarkovModel -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/HiddenMarkovModel">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/DeterministicApproach"/>
+    <owl:Class rdf:about="https://w3id.org/salon#HiddenMarkovModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#DeterministicApproach"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hidden Markov model</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/IterativeMethod -->
+    <!-- https://w3id.org/salon#IterativeMethod -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/IterativeMethod">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/DeterministicApproach"/>
+    <owl:Class rdf:about="https://w3id.org/salon#IterativeMethod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#DeterministicApproach"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iterative method</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MasterSlaveMethod -->
+    <!-- https://w3id.org/salon#MasterSlaveMethod -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MasterSlaveMethod">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/DeterministicApproach"/>
+    <owl:Class rdf:about="https://w3id.org/salon#MasterSlaveMethod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#DeterministicApproach"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Master-slave method</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MaximizationAlignmentScoreFunction -->
+    <!-- https://w3id.org/salon#MaximizationAlignmentScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MaximizationAlignmentScoreFunction">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
+    <owl:Class rdf:about="https://w3id.org/salon#MaximizationAlignmentScoreFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#AlignmentScoreFunction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximization Alignment Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction -->
+    <!-- https://w3id.org/salon#MaximizationColumnScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+    <owl:Class rdf:about="https://w3id.org/salon#MaximizationColumnScoreFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#ColumnScoreFunction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maximization Column Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MinimizationAlignmentScoreFunction -->
+    <!-- https://w3id.org/salon#MinimizationAlignmentScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MinimizationAlignmentScoreFunction">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreFunction"/>
+    <owl:Class rdf:about="https://w3id.org/salon#MinimizationAlignmentScoreFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#AlignmentScoreFunction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimization Alignment Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction -->
+    <!-- https://w3id.org/salon#MinimizationColumnScoreFunction -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/ColumnScoreFunction"/>
+    <owl:Class rdf:about="https://w3id.org/salon#MinimizationColumnScoreFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#ColumnScoreFunction"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minimization Column Score Function</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment -->
+    <!-- https://w3id.org/salon#NotCorrectAlignment -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
+    <owl:Class rdf:about="https://w3id.org/salon#NotCorrectAlignment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#Alignment"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not correct Alignment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod -->
+    <!-- https://w3id.org/salon#ProgressiveMethod -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/DeterministicApproach"/>
+    <owl:Class rdf:about="https://w3id.org/salon#ProgressiveMethod">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#DeterministicApproach"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progressive method</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/Protein -->
+    <!-- https://w3id.org/salon#Protein -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/Protein">
+    <owl:Class rdf:about="https://w3id.org/salon#Protein">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The protein associated to an amino acid sequence.</rdfs:comment>
         <rdfs:label>Protein</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ProteinAlignmentSequence -->
+    <!-- https://w3id.org/salon#ProteinAlignmentSequence -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/ProteinAlignmentSequence">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+    <owl:Class rdf:about="https://w3id.org/salon#ProteinAlignmentSequence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/associatedTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontologies.khaos.uma.es/salon/Protein"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#associatedTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/salon#Protein"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Sequence</rdfs:label>
@@ -972,23 +980,23 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/StochasticApproach -->
+    <!-- https://w3id.org/salon#StochasticApproach -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/StochasticApproach">
-        <rdfs:subClassOf rdf:resource="http://www.ontologies.khaos.uma.es/salon/ConstructionMethod"/>
+    <owl:Class rdf:about="https://w3id.org/salon#StochasticApproach">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/salon#ConstructionMethod"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stochastic Approach</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/SubAlignment -->
+    <!-- https://w3id.org/salon#SubAlignment -->
 
-    <owl:Class rdf:about="http://www.ontologies.khaos.uma.es/salon/SubAlignment">
+    <owl:Class rdf:about="https://w3id.org/salon#SubAlignment">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasSequence"/>
+                <owl:onProperty rdf:resource="https://w3id.org/salon#hasSequence"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.ontologies.khaos.uma.es/salon/AlignmentSequence"/>
+                <owl:onClass rdf:resource="https://w3id.org/salon#AlignmentSequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subset of sequences in the alignment.</rdfs:comment>
@@ -1008,56 +1016,56 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/AlignmentScoreTC -->
+    <!-- https://w3id.org/salon#AlignmentScoreTC -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/AlignmentScoreTC">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MaximizationAlignmentScoreFunction"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#AlignmentScoreTC">
+        <rdf:type rdf:resource="https://w3id.org/salon#MaximizationAlignmentScoreFunction"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</scoreMin>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/BLAST -->
+    <!-- https://w3id.org/salon#BLAST -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/BLAST">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MasterSlaveMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BLAST">
+        <rdf:type rdf:resource="https://w3id.org/salon#MasterSlaveMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ClustalW -->
+    <!-- https://w3id.org/salon#ClustalW -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/ClustalW">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#ClustalW">
+        <rdf:type rdf:resource="https://w3id.org/salon#ProgressiveMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScoreNongapsPercentage -->
+    <!-- https://w3id.org/salon#ColumnScoreNongapsPercentage -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreNongapsPercentage">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#ColumnScoreNongapsPercentage">
+        <rdf:type rdf:resource="https://w3id.org/salon#MaximizationColumnScoreFunction"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</scoreMin>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScoreSOP -->
+    <!-- https://w3id.org/salon#ColumnScoreSOP -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreSOP">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#ColumnScoreSOP">
+        <rdf:type rdf:resource="https://w3id.org/salon#MaximizationColumnScoreFunction"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</scoreMin>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScoreShannonEntropy -->
+    <!-- https://w3id.org/salon#ColumnScoreShannonEntropy -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreShannonEntropy">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MinimizationColumnScoreFunction"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#ColumnScoreShannonEntropy">
+        <rdf:type rdf:resource="https://w3id.org/salon#MinimizationColumnScoreFunction"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.322</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</scoreMin>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H ranges from 0 (only one residue in present at that position) to 4.322 (all 20 residues are equally represented in that position). Typically, positions with H &gt;2.0 are considerered variable, whereas those with H &lt; 2 are consider conserved. Highly conserved positions are those with H &lt;1.0 (Litwin and Jores, 1992). A minimum number of sequences is however required (~100) for H to describe the diversity of a protein family.</rdfs:comment>
@@ -1065,88 +1073,78 @@
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/ColumnScoreTC -->
+    <!-- https://w3id.org/salon#ColumnScoreTC -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/ColumnScoreTC">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/MaximizationColumnScoreFunction"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#ColumnScoreTC">
+        <rdf:type rdf:resource="https://w3id.org/salon#MaximizationColumnScoreFunction"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</scoreMin>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/DynamicProgramming -->
+    <!-- https://w3id.org/salon#DynamicProgramming -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/DynamicProgramming">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/ConstructionMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#DynamicProgramming">
+        <rdf:type rdf:resource="https://w3id.org/salon#ConstructionMethod"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dynamic programming</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/KAlign -->
+    <!-- https://w3id.org/salon#KAlign -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/KAlign">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#KAlign">
+        <rdf:type rdf:resource="https://w3id.org/salon#ProgressiveMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MAFFT -->
+    <!-- https://w3id.org/salon#MAFFT -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/MAFFT">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/IterativeMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#MAFFT">
+        <rdf:type rdf:resource="https://w3id.org/salon#IterativeMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MUMMALS -->
+    <!-- https://w3id.org/salon#MUMMALS -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/MUMMALS">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/HiddenMarkovModel"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#MUMMALS">
+        <rdf:type rdf:resource="https://w3id.org/salon#HiddenMarkovModel"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/MUSLCLE -->
+    <!-- https://w3id.org/salon#MUSLCLE -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/MUSLCLE">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/IterativeMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#MUSLCLE">
+        <rdf:type rdf:resource="https://w3id.org/salon#IterativeMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/PRIME -->
+    <!-- https://w3id.org/salon#PRIME -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/PRIME">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/IterativeMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#PRIME">
+        <rdf:type rdf:resource="https://w3id.org/salon#IterativeMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/SATCHMO -->
+    <!-- https://w3id.org/salon#SATCHMO -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/SATCHMO">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#SATCHMO">
+        <rdf:type rdf:resource="https://w3id.org/salon#ProgressiveMethod"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontologies.khaos.uma.es/salon/T-Coffee -->
+    <!-- https://w3id.org/salon#T-Coffee -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontologies.khaos.uma.es/salon/T-Coffee">
-        <rdf:type rdf:resource="http://www.ontologies.khaos.uma.es/salon/ProgressiveMethod"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#T-Coffee">
+        <rdf:type rdf:resource="https://w3id.org/salon#ProgressiveMethod"/>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
             <rdf:Description>
@@ -1157,6 +1155,17 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1208,9 +1217,8 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1219,9 +1227,19 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1263,6 +1281,72 @@
         </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1325,28 +1409,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
@@ -1361,6 +1423,16 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1397,40 +1469,40 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/a">
+    <rdf:Description rdf:about="https://w3id.org/salon#a">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/c">
+    <rdf:Description rdf:about="https://w3id.org/salon#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cs">
+    <rdf:Description rdf:about="https://w3id.org/salon#cs">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc">
+    <rdf:Description rdf:about="https://w3id.org/salon#csc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csf">
+    <rdf:Description rdf:about="https://w3id.org/salon#csf">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmax">
+    <rdf:Description rdf:about="https://w3id.org/salon#cmax">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmin">
+    <rdf:Description rdf:about="https://w3id.org/salon#cmin">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/as">
+    <rdf:Description rdf:about="https://w3id.org/salon#as">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc">
+    <rdf:Description rdf:about="https://w3id.org/salon#asc">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asf">
+    <rdf:Description rdf:about="https://w3id.org/salon#asf">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin">
+    <rdf:Description rdf:about="https://w3id.org/salon#amin">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amax">
+    <rdf:Description rdf:about="https://w3id.org/salon#amax">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -1444,8 +1516,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
-                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#Alignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1454,9 +1526,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore"/>
-                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
-                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScore"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/salon#as"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1465,9 +1537,9 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
-                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
-                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#score"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#asc"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1476,9 +1548,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction"/>
-                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
-                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScoreFunction"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#asf"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1487,9 +1559,9 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMin"/>
-                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
-                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMin"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#asf"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#amin"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1500,8 +1572,8 @@
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                 <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
                                                                 <swrl:arguments rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
-                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                    <rdf:Description rdf:about="https://w3id.org/salon#asc"/>
+                                                                    <rdf:Description rdf:about="https://w3id.org/salon#amin"/>
                                                                 </swrl:arguments>
                                                             </rdf:Description>
                                                         </rdf:first>
@@ -1524,8 +1596,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/NotCorrectAlignment"/>
-                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#NotCorrectAlignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1543,8 +1615,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/Alignment"/>
-                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#Alignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1553,9 +1625,9 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumn"/>
-                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
-                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/c"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasColumn"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/salon#c"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1564,9 +1636,9 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScore"/>
-                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/c"/>
-                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasColumnScore"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#c"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#cs"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1575,9 +1647,9 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
-                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
-                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csc"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#score"/>
+                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#cs"/>
+                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#csc"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1586,9 +1658,9 @@
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasColumnScoreFunction"/>
-                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cs"/>
-                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasColumnScoreFunction"/>
+                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#cs"/>
+                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#csf"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1597,9 +1669,9 @@
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
-                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
-                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cmax"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMax"/>
+                                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#csf"/>
+                                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#cmax"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest>
@@ -1608,9 +1680,9 @@
                                                                 <rdf:first>
                                                                     <rdf:Description>
                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
-                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/csf"/>
-                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/cmin"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMax"/>
+                                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#csf"/>
+                                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#cmin"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
                                                                 <rdf:rest>
@@ -1621,8 +1693,8 @@
                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                                 <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
                                                                                 <swrl:arguments rdf:parseType="Collection">
-                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc"/>
-                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmax"/>
+                                                                                    <rdf:Description rdf:about="https://w3id.org/salon#csc"/>
+                                                                                    <rdf:Description rdf:about="https://w3id.org/salon#cmax"/>
                                                                                 </swrl:arguments>
                                                                             </rdf:Description>
                                                                         </rdf:first>
@@ -1634,8 +1706,8 @@
                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                                         <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
                                                                                         <swrl:arguments rdf:parseType="Collection">
-                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/csc"/>
-                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/cmin"/>
+                                                                                            <rdf:Description rdf:about="https://w3id.org/salon#csc"/>
+                                                                                            <rdf:Description rdf:about="https://w3id.org/salon#cmin"/>
                                                                                         </swrl:arguments>
                                                                                     </rdf:Description>
                                                                                 </rdf:first>
@@ -1645,9 +1717,9 @@
                                                                                         <rdf:first>
                                                                                             <rdf:Description>
                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScore"/>
-                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
-                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScore"/>
+                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
+                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#as"/>
                                                                                             </rdf:Description>
                                                                                         </rdf:first>
                                                                                         <rdf:rest>
@@ -1656,9 +1728,9 @@
                                                                                                 <rdf:first>
                                                                                                     <rdf:Description>
                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/score"/>
-                                                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
-                                                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asc"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#score"/>
+                                                                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#asc"/>
                                                                                                     </rdf:Description>
                                                                                                 </rdf:first>
                                                                                                 <rdf:rest>
@@ -1667,9 +1739,9 @@
                                                                                                         <rdf:first>
                                                                                                             <rdf:Description>
                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/hasAlignmentScoreFunction"/>
-                                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/as"/>
-                                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#hasAlignmentScoreFunction"/>
+                                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#as"/>
+                                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#asf"/>
                                                                                                             </rdf:Description>
                                                                                                         </rdf:first>
                                                                                                         <rdf:rest>
@@ -1678,9 +1750,9 @@
                                                                                                                 <rdf:first>
                                                                                                                     <rdf:Description>
                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMin"/>
-                                                                                                                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
-                                                                                                                        <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMin"/>
+                                                                                                                        <swrl:argument1 rdf:resource="https://w3id.org/salon#asf"/>
+                                                                                                                        <swrl:argument2 rdf:resource="https://w3id.org/salon#amin"/>
                                                                                                                     </rdf:Description>
                                                                                                                 </rdf:first>
                                                                                                                 <rdf:rest>
@@ -1689,9 +1761,9 @@
                                                                                                                         <rdf:first>
                                                                                                                             <rdf:Description>
                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/scoreMax"/>
-                                                                                                                                <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/asf"/>
-                                                                                                                                <swrl:argument2 rdf:resource="http://www.ontologies.khaos.uma.es/salon/amax"/>
+                                                                                                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/salon#scoreMax"/>
+                                                                                                                                <swrl:argument1 rdf:resource="https://w3id.org/salon#asf"/>
+                                                                                                                                <swrl:argument2 rdf:resource="https://w3id.org/salon#amax"/>
                                                                                                                             </rdf:Description>
                                                                                                                         </rdf:first>
                                                                                                                         <rdf:rest>
@@ -1702,8 +1774,8 @@
                                                                                                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                                                                                         <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
                                                                                                                                         <swrl:arguments rdf:parseType="Collection">
-                                                                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
-                                                                                                                                            <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amax"/>
+                                                                                                                                            <rdf:Description rdf:about="https://w3id.org/salon#asc"/>
+                                                                                                                                            <rdf:Description rdf:about="https://w3id.org/salon#amax"/>
                                                                                                                                         </swrl:arguments>
                                                                                                                                     </rdf:Description>
                                                                                                                                 </rdf:first>
@@ -1715,8 +1787,8 @@
                                                                                                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                                                                                                                                                 <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
                                                                                                                                                 <swrl:arguments rdf:parseType="Collection">
-                                                                                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/asc"/>
-                                                                                                                                                    <rdf:Description rdf:about="http://www.ontologies.khaos.uma.es/salon/amin"/>
+                                                                                                                                                    <rdf:Description rdf:about="https://w3id.org/salon#asc"/>
+                                                                                                                                                    <rdf:Description rdf:about="https://w3id.org/salon#amin"/>
                                                                                                                                                 </swrl:arguments>
                                                                                                                                             </rdf:Description>
                                                                                                                                         </rdf:first>
@@ -1759,8 +1831,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.ontologies.khaos.uma.es/salon/CorrectAlignment"/>
-                        <swrl:argument1 rdf:resource="http://www.ontologies.khaos.uma.es/salon/a"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/salon#CorrectAlignment"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/salon#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

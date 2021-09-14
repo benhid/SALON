@@ -1,4 +1,4 @@
-@prefix salon: <http://www.ontologies.khaos.uma.es/salon/> .
+@prefix salon: <https://w3id.org/salon#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 salon:BB11001 a salon:Alignment ;
