@@ -1,6 +1,7 @@
 # SALON - [Sequence ALignment ONtology](https://github.com/benhid/SALON)
 
-[![Explore ontology](https://img.shields.io/badge/docs-Documentation-orange.svg?style=flat-square)](https://w3id.org/salon/)
+[![DOI](https://zenodo.org/badge/317975049.svg)](https://zenodo.org/badge/latestdoi/317975049)
+[![Explore ontology](https://img.shields.io/badge/docs-Documentation-orange.svg)](https://w3id.org/salon/)
 
 ### ✨ Ontology 
 

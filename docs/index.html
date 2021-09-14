@@ -245,7 +245,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
         <dd>2021-09-14T10:21:00</dd>
         <dt>Version Information</dt>
-        <dd>V1.0.0</dd>
+        <dd>v1.0.0</dd>
         <dt>Version URI</dt>
         <dd><a href="https://w3id.org/salon#/1.0.0">/1.0.0</a></dd>
         <dt>License &amp; Rights</dt>
@@ -254,7 +254,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             &copy; Khaos Research Group, University of Málaga
         </dd>
         <dt>Ontology RDF</dt>
-        <dd><a href="SALON.owl">RDF (xml)</a></dd>
+        <dd><a href="https://github.com/benhid/SALON/blob/master/SALON.owl">RDF (xml)</a></dd>
     </dl>
     <h2>Description</h2>
     <div id="description">
@@ -275,9 +275,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 </section>
 <section id="overview">
     <h2>Overview</h2>
-    <a href="https://github.com/benhid/SALON/blob/master/SALON.owl"><img src="https://img.shields.io/badge/owl-SALON.owl-blue?style=flat-square" /></a>
-    <a href="https://github.com/benhid/SALON/"><img src="https://img.shields.io/badge/Python%20Cli-saloncli-brightgreen?style=flat-square&logo=github" /></a>
-    <a href="https://ontologies.khaos.uma.es/salon/endpoint/sparql"><img src="https://img.shields.io/badge/Endpoint-SPARQL-important?style=flat-square" /></a>
+    <a href="https://github.com/benhid/SALON/"><img src="https://img.shields.io/badge/Github-Repository-brightgreen?logo=Github" /></a>
+    <a href="https://ontologies.khaos.uma.es/salon/endpoint/sparql"><img src="https://img.shields.io/badge/Endpoint-SPARQL-important" /></a>
 </section>
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
@@ -329,31 +328,31 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentScore">Alignment Score</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasAlignmentScore">Has Alignment Score</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentScore">Alignment Score</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasSubalignment">Has Subalignment</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#SubAlignment">Sub Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasColumn">Has Column</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#AlignmentColumn">Alignment Column</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#NotcorrectAlignment">Not correct Alignment</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CorrectAlignment">Correct Alignment</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#NotcorrectAlignment">Not correct Alignment</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasColumn">Has Column</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasAlignmentScore">Has Alignment Score</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasSubalignment">Has Subalignment</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsColumnOf">Is Column Of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsSubalignmentOf">Is Subalignment Of</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -377,24 +376,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#ColumnScore">Column Score</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasColumnScore">Has Column Score</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#ColumnScore">Column Score</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#Column">Column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Sequenceindex">Sequence index</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Consensuscharacter">Consensus character</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Columnweight">Column weight</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#Sequenceindex">Sequence index</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Column">Column</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#HasColumnScore">Has Column Score</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsColumnOf">Is Column Of</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumn">hasColumn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasColumn">Has Column</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -418,19 +417,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasColumnScoreFunction">Has Column Score Function</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#AlignmentScoreFunction">Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasAlignmentScoreFunction">Has Alignment Score Function</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasAlignmentScore">hasAlignmentScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasAlignmentScore">Has Alignment Score</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -454,14 +453,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MaximizationAlignmentScoreFunction">Maximization Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#MinimizationAlignmentScoreFunction">Minimization Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MaximizationAlignmentScoreFunction">Maximization Alignment Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasAlignmentScoreFunction">Has Alignment Score Function</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -485,32 +484,32 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasFeature">Has Feature</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Feature">Feature</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#DNASequence">DNA Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProteinSequence">Protein Sequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#DNASequence">DNA Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#Sequencelength">Sequence length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Sequenceorganism">Sequence organism</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#SequenceIdentifier">Sequence Identifier</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasFeature">Has Feature</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#Sequence">Sequence</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Sequencelength">Sequence length</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#IsSequenceOf">Is Sequence Of</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsFeatureOf">Is Feature Of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasSequence">Has Sequence</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -534,19 +533,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasColumnScoreFunction">Has Column Score Function</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">exactly</span> 1 <a href="#ColumnScoreFunction">Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasColumnScoreFunction">Has Column Score Function</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumnScore">hasColumnScore</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasColumnScore">Has Column Score</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -570,14 +569,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MaximizationColumnScoreFunction">Maximization Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#MinimizationColumnScoreFunction">Minimization Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MaximizationColumnScoreFunction">Maximization Column Score Function</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasColumnScoreFunction">hasColumnScoreFunction</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasColumnScoreFunction">Has Column Score Function</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -608,7 +607,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasConstructionMethod">Has Construction Method</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -674,10 +673,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#HiddenMarkovmodel">Hidden Markov model</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Iterativemethod">Iterative method</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Master-slavemethod">Master-slave method</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Progressivemethod">Progressive method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Iterativemethod">Iterative method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HiddenMarkovmodel">Hidden Markov model</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Master-slavemethod">Master-slave method</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -725,18 +724,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#IsFeatureOf">Is Feature Of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Featurescore">Feature score</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Featurenote">Feature note</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Featurestart">Feature start</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#Featurescore">Feature score</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Featuretype">Feature type</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Featurestop">Feature stop</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasFeature">hasFeature</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasFeature">Has Feature</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -802,8 +801,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="https://w3id.org/salon#MAFFT">MAFFT</a><br/>
                     <a href="https://w3id.org/salon#PRIME">PRIME</a><br/>
+                    <a href="https://w3id.org/salon#MAFFT">MAFFT</a><br/>
                     <a href="https://w3id.org/salon#MUSLCLE">MUSLCLE</a><br/>
                 </td>
             </tr>
@@ -876,8 +875,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="https://w3id.org/salon#ColumnScoreSOP">ColumnScoreSOP</a><br/>
                     <a href="https://w3id.org/salon#ColumnScoreTC">ColumnScoreTC</a><br/>
+                    <a href="https://w3id.org/salon#ColumnScoreSOP">ColumnScoreSOP</a><br/>
                     <a href="https://w3id.org/salon#ColumnScoreNongapsPercentage">ColumnScoreNongapsPercentage</a><br/>
                 </td>
             </tr>
@@ -962,10 +961,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Members</th>
                 <td>
-                    <a href="https://w3id.org/salon#SATCHMO">SATCHMO</a><br/>
-                    <a href="https://w3id.org/salon#KAlign">KAlign</a><br/>
                     <a href="https://w3id.org/salon#ClustalW">ClustalW</a><br/>
+                    <a href="https://w3id.org/salon#SATCHMO">SATCHMO</a><br/>
                     <a href="https://w3id.org/salon#T-Coffee">T-Coffee</a><br/>
+                    <a href="https://w3id.org/salon#KAlign">KAlign</a><br/>
                 </td>
             </tr>
         </table>
@@ -989,15 +988,15 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#Proteingene">Protein gene</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Proteinname">Protein name</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#Proteingene">Protein gene</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#Proteindescription">Protein description</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#AssociatedTo">Associated To</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1021,13 +1020,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AssociatedTo">Associated To</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">some</span> <a href="#Protein">Protein</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#associatedTo">associatedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#AssociatedTo">Associated To</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1075,24 +1074,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Restrictions</th>
                 <td>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#HasSequence">Has Sequence</a><sup class="sup-op" title="object property">op</sup> <span class="cardinality">min</span> 2 <a href="#AlignmentSequence">Alignment Sequence</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
                     <a href="#SubAlignmentname">SubAlignment name</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#hasSequence">hasSequence</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasConstructionMethod">Has Construction Method</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsSubalignmentOf">Is Subalignment Of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasSequence">Has Sequence</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#Gapcharacter">Gap character</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#constructionMethod">constructionMethod</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasSubalignment">hasSubalignment</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#IsSequenceOf">Is Sequence Of</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#HasSubalignment">Has Subalignment</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1101,24 +1100,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#associatedTo">associatedTo</a></li>
-        <li><a href="#constructionMethod">constructionMethod</a></li>
-        <li><a href="#hasAlignmentScore">hasAlignmentScore</a></li>
-        <li><a href="#hasAlignmentScoreFunction">hasAlignmentScoreFunction</a></li>
-        <li><a href="#hasColumn">hasColumn</a></li>
-        <li><a href="#hasColumnScore">hasColumnScore</a></li>
-        <li><a href="#hasColumnScoreFunction">hasColumnScoreFunction</a></li>
-        <li><a href="#hasFeature">hasFeature</a></li>
-        <li><a href="#hasSequence">hasSequence</a></li>
-        <li><a href="#hasSubalignment">hasSubalignment</a></li>
-        <li><a href="#isColumnOf">isColumnOf</a></li>
-        <li><a href="#isFeatureOf">isFeatureOf</a></li>
-        <li><a href="#isSequenceOf">isSequenceOf</a></li>
-        <li><a href="#isSubalignmentOf">isSubalignmentOf</a></li>
+        <li><a href="#AssociatedTo">Associated To</a></li>
+        <li><a href="#HasConstructionMethod">Has Construction Method</a></li>
+        <li><a href="#HasAlignmentScore">Has Alignment Score</a></li>
+        <li><a href="#HasAlignmentScoreFunction">Has Alignment Score Function</a></li>
+        <li><a href="#HasColumn">Has Column</a></li>
+        <li><a href="#HasColumnScore">Has Column Score</a></li>
+        <li><a href="#HasColumnScoreFunction">Has Column Score Function</a></li>
+        <li><a href="#HasFeature">Has Feature</a></li>
+        <li><a href="#HasSequence">Has Sequence</a></li>
+        <li><a href="#HasSubalignment">Has Subalignment</a></li>
+        <li><a href="#IsColumnOf">Is Column Of</a></li>
+        <li><a href="#IsFeatureOf">Is Feature Of</a></li>
+        <li><a href="#IsSequenceOf">Is Sequence Of</a></li>
+        <li><a href="#IsSubalignmentOf">Is Subalignment Of</a></li>
     </ul>
-    <div class="entity property" id="associatedTo">
-        <h3>associatedTo<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#associatedTo" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="AssociatedTo">
+        <h3>Associated To<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#AssociatedTo" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1139,9 +1138,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="constructionMethod">
-        <h3>constructionMethod<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#constructionMethod" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasConstructionMethod">
+        <h3>Has Construction Method<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasConstructionMethod" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1162,9 +1161,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasAlignmentScore">
-        <h3>hasAlignmentScore<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasAlignmentScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasAlignmentScore">
+        <h3>Has Alignment Score<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasAlignmentScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1185,9 +1184,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasAlignmentScoreFunction">
-        <h3>hasAlignmentScoreFunction<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasAlignmentScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasAlignmentScoreFunction">
+        <h3>Has Alignment Score Function<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasAlignmentScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1208,9 +1207,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasColumn">
-        <h3>hasColumn<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasColumn" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasColumn">
+        <h3>Has Column<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasColumn" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1220,7 +1219,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isColumnOf">isColumnOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#IsColumnOf">Is Column Of</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1237,9 +1236,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasColumnScore">
-        <h3>hasColumnScore<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasColumnScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasColumnScore">
+        <h3>Has Column Score<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasColumnScore" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1260,9 +1259,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasColumnScoreFunction">
-        <h3>hasColumnScoreFunction<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasColumnScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasColumnScoreFunction">
+        <h3>Has Column Score Function<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasColumnScoreFunction" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1283,9 +1282,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasFeature">
-        <h3>hasFeature<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasFeature" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasFeature">
+        <h3>Has Feature<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasFeature" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1295,7 +1294,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isFeatureOf">isFeatureOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#IsFeatureOf">Is Feature Of</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1312,9 +1311,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasSequence">
-        <h3>hasSequence<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasSequence" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasSequence">
+        <h3>Has Sequence<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasSequence" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1324,7 +1323,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isSequenceOf">isSequenceOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#IsSequenceOf">Is Sequence Of</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1341,9 +1340,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="hasSubalignment">
-        <h3>hasSubalignment<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#hasSubalignment" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="HasSubalignment">
+        <h3>Has Subalignment<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#HasSubalignment" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1353,7 +1352,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Inverse properties</th>
                 <td>
-                    <a href="#isSubalignmentOf">isSubalignmentOf</a><sup class="sup-op" title="object property">op</sup>
+                    <a href="#IsSubalignmentOf">Is Subalignment Of</a><sup class="sup-op" title="object property">op</sup>
                 </td>
             </tr>
             <tr>
@@ -1370,9 +1369,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isColumnOf">
-        <h3>isColumnOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#isColumnOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="IsColumnOf">
+        <h3>Is Column Of<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#IsColumnOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1393,9 +1392,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isFeatureOf">
-        <h3>isFeatureOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#isFeatureOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="IsFeatureOf">
+        <h3>Is Feature Of<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#IsFeatureOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1416,9 +1415,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isSequenceOf">
-        <h3>isSequenceOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#isSequenceOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="IsSequenceOf">
+        <h3>Is Sequence Of<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#IsSequenceOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1439,9 +1438,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="isSubalignmentOf">
-        <h3>isSubalignmentOf<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#isSubalignmentOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="IsSubalignmentOf">
+        <h3>Is Subalignment Of<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#IsSubalignmentOf" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -2200,6 +2199,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#created">created</a></li>
         <li><a href="#creator">creator</a></li>
         <li><a href="#description">description</a></li>
+        <li><a href="#identifier">identifier</a></li>
         <li><a href="#license">license</a></li>
         <li><a href="#modified">modified</a></li>
         <li><a href="#publisher">publisher</a></li>
@@ -2213,7 +2213,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <li><a href="#affiliation">affiliation</a></li>
         <li><a href="#codeRepository">codeRepository</a></li>
         <li><a href="#email">email</a></li>
-        <li><a href="#identifier">identifier</a></li>
+        <li><a href="#identifier1">identifier</a></li>
         <li><a href="#name">name</a></li>
         <li><a href="#url">url</a></li>
     </ul>
@@ -2247,6 +2247,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://purl.org/dc/terms/description</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="identifier">
+        <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#identifier" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://purl.org/dc/terms/identifier</code></td>
             </tr>
         </table>
     </div>
@@ -2393,9 +2404,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="identifier">
+    <div class="entity property" id="identifier1">
         <h3>identifier<sup title="annotation property" class="sup-ap">ap</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#identifier" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
+            <a href="#identifier1" title="fragment link to here">#</a>&nbsp;<a href="#annotationproperties" title="Annotation Properties Index">APs</a></span>
         </h3>
         <table>
             <tr>
