@@ -16,6 +16,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/salon#">
         <owl:versionIRI rdf:resource="https://w3id.org/salon#/1.0.0"/>
+        <dct:bibliographicCitation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benítez-Hidalgo, A., Roldán-García, M. M., &amp; Navas-Delgado, I. (2021, September 14). SALON - Pairwise and Multiple Sequence ALignment ONtology. W3ID. https://w3id.org/salon</dct:bibliographicCitation>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-01T23:59:59</dct:created>
         <dct:creator>
             <rdf:Description>
@@ -56,6 +57,7 @@
             </rdf:Description>
         </dct:creator>
         <dct:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">10.5281/zenodo.5506947</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-14T23:59:59</dct:issued>
         <dct:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://opensource.org/licenses/MIT</dct:license>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-14T10:21:00</dct:modified>
         <dct:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khaos Research Group</dct:publisher>
@@ -83,6 +85,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
@@ -104,6 +112,12 @@
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
@@ -1184,8 +1198,9 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1207,6 +1222,28 @@
         </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1290,8 +1327,20 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1322,63 +1371,19 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1429,62 +1434,8 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1535,6 +1486,59 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
@@ -1560,6 +1564,80 @@
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     
 
