@@ -1,0 +1,143 @@
+@prefix salon: <https://w3id.org/salon#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+salon:AlignmentScoreTC a salon:MaximizationAlignmentScoreFunction ;
+    salon:scoreMin 0 ;
+    salon:scoreMax 100 .
+
+salon:BB11001_Score_TC a salon:AlignmentScore ;
+    salon:score -10 ;
+    salon:hasAlignmentScoreFunction salon:AlignmentScoreTC .
+
+salon:BB11001 a salon:Alignment ;
+    salon:gapCharacter "-" ;
+    salon:hasSubAlignment salon:BB11001_ref1-v1-1aab_ref1 ;
+    salon:hasAlignmentScore salon:BB11001_Score_TC .
+
+salon:BB11001_1aab_ a salon:ProteinAlignmentSequence ;
+    salon:accessionNumber "1aab" ;
+    salon:hasFeature salon:BB11001_1aab__f0,
+        salon:BB11001_1aab__f1,
+        salon:BB11001_1aab__f2 ;
+    salon:identifier "1aab_" ;
+    salon:length 96 ;
+    salon:sequence "---gkgdpkkprgkmssyaffvqtsreehkkkhpdasvnfsefskkcserwktmsakekgkfedmakadkaryeremktyippkge----------" .
+
+salon:BB11001_1aab__f0 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 14 ;
+    salon:FStop 26 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1aab__f1 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 41 ;
+    salon:FStop 48 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1aab__f2 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 55 ;
+    salon:FStop 73 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1j46_A a salon:ProteinAlignmentSequence ;
+    salon:accessionNumber "1j46" ;
+    salon:hasFeature salon:BB11001_1j46_A_f0,
+        salon:BB11001_1j46_A_f1,
+        salon:BB11001_1j46_A_f2 ;
+    salon:identifier "1j46_A" ;
+    salon:length 96 ;
+    salon:sequence "------mqdrvkrpmnafivwsrdqrrkmalenp--rmrnseiskqlgyqwkmlteaekwpffqeaqklqamhrekypnykyrprrkakmlpk---" .
+
+salon:BB11001_1j46_A_f0 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 11 ;
+    salon:FStop 26 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1j46_A_f1 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 32 ;
+    salon:FStop 43 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1j46_A_f2 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 48 ;
+    salon:FStop 68 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1k99_A a salon:ProteinAlignmentSequence ;
+    salon:accessionNumber "1k99" ;
+    salon:hasFeature salon:BB11001_1k99_A_f0,
+        salon:BB11001_1k99_A_f1,
+        salon:BB11001_1k99_A_f2 ;
+    salon:identifier "1k99_A" ;
+    salon:length 96 ;
+    salon:sequence "mkklkkhpdfpkkpltpyfrffmekrakyaklhp--emsnldltkilskkykelpekkkmkyiqdfqrekqefernlarfredhpdliqnakk---" .
+
+salon:BB11001_1k99_A_f0 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 17 ;
+    salon:FStop 30 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1k99_A_f1 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 39 ;
+    salon:FStop 51 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_1k99_A_f2 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 57 ;
+    salon:FStop 80 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_2lef_A a salon:ProteinAlignmentSequence ;
+    salon:accessionNumber "2lef" ;
+    salon:hasFeature salon:BB11001_2lef_A_f0,
+        salon:BB11001_2lef_A_f1,
+        salon:BB11001_2lef_A_f2 ;
+    salon:identifier "2lef_A" ;
+    salon:length 96 ;
+    salon:sequence "--------mhikkplnafmlymkemranvvaest--lkesaainqilgrrwhalsreeqakyyelarkerqlhmqlypgwsardnygkkkkrkrek" .
+
+salon:BB11001_2lef_A_f0 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 9 ;
+    salon:FStop 24 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_2lef_A_f1 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 30 ;
+    salon:FStop 41 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_2lef_A_f2 salon:FNote "HELIX" ;
+    salon:FScore 0.00 ;
+    salon:FStart 46 ;
+    salon:FStop 66 ;
+    salon:FType "STRUCT" .
+
+salon:BB11001_ref1-v1-1aab_ref1 a salon:SubAlignment ;
+    salon:hasSequence salon:BB11001_1aab_,
+        salon:BB11001_1j46_A,
+        salon:BB11001_1k99_A,
+        salon:BB11001_2lef_A ;
+    salon:subAlignmentName "ref1-v1-1aab_ref1" .
+
+salon:ColumnScoreTC a salon:MaximizationColumnScoreFunction ;
+    salon:scoreMin 0 ;
+    salon:scoreMax 1 .
+
+salon:BB11001_Col1_Score_TC a salon:ColumnScore ;
+    salon:score 1 ;
+    salon:hasColumnScoreFunction salon:ColumnScoreTC .
+
+salon:BB11001_Col1 a salon:AlignmentColumn ;
+    salon:hasColumnScore salon:BB11001_Col1_Score_TC .
+
+salon:BB11001 salon:hasColumn salon:BB11001_Col1 .
