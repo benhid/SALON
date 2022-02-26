@@ -188,6 +188,12 @@
     
 
 
+    <!-- https://w3id.org/salon#hasSubAlignment -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/salon#hasSubAlignment"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -980,6 +986,12 @@
     
 
 
+    <!-- https://w3id.org/salon#NamedIndividual -->
+
+    <owl:Class rdf:about="https://w3id.org/salon#NamedIndividual"/>
+    
+
+
     <!-- https://w3id.org/salon#ProgressiveMethod -->
 
     <owl:Class rdf:about="https://w3id.org/salon#ProgressiveMethod">
@@ -1083,8 +1095,2244 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/salon#AlignmentScoreTC">
         <rdf:type rdf:resource="https://w3id.org/salon#MaximizationAlignmentScoreFunction"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</scoreMax>
+        <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</scoreMin>
+        <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</scoreMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001">
+        <rdf:type rdf:resource="https://w3id.org/salon#Alignment"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col7"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col8"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col9"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col10"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col11"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col12"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col13"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col14"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col18"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col19"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col20"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col21"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col22"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col23"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col24"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col25"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col26"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col27"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col28"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col29"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col30"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col31"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col32"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col33"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col34"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col35"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col36"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col37"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col38"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col39"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col40"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col41"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col44"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col45"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col46"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col47"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col48"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col49"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col50"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col51"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col52"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col53"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col54"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col55"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col56"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col57"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col58"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col59"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col60"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col61"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col62"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col63"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col64"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col65"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col66"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col67"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col68"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col69"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col70"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col71"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col72"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col73"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col74"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col75"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col76"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col77"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col82"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col83"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col84"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col85"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col86"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col87"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col89"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col92"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col93"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col94"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col95"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col96"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col97"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col98"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col99"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col100"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col101"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col102"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col103"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col104"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col105"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col106"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col107"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col109"/>
+        <salon:hasColumn rdf:resource="https://w3id.org/salon#BB11001_Col110"/>
+        <gapCharacter>-</gapCharacter>
+        <hasSubAlignment rdf:resource="https://w3id.org/salon#BB11001_ref1-v1-1aab_ref1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1aab_ -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1aab_">
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1aab__f0"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1aab__f1"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1aab__f2"/>
+        <accessionNumber>1aab</accessionNumber>
+        <identifier>1aab_</identifier>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</length>
+        <sequence>---gkgdpkkprgkmssyaffvqtsreehkkkhpdasvnfsefskkcserwktmsakekgkfedmakadkaryeremktyippkge----------</sequence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1aab__f0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1aab__f0">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1aab__f1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1aab__f1">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1aab__f2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1aab__f2">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1j46_A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1j46_A">
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1j46_A_f0"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1j46_A_f1"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1j46_A_f2"/>
+        <accessionNumber>1j46</accessionNumber>
+        <identifier>1j46_A</identifier>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</length>
+        <sequence>------mqdrvkrpmnafivwsrdqrrkmalenp--rmrnseiskqlgyqwkmlteaekwpffqeaqklqamhrekypnykyrprrkakmlpk---</sequence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1j46_A_f0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1j46_A_f0">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1j46_A_f1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1j46_A_f1">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1j46_A_f2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1j46_A_f2">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1k99_A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1k99_A">
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1k99_A_f0"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1k99_A_f1"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_1k99_A_f2"/>
+        <accessionNumber>1k99</accessionNumber>
+        <identifier>1k99_A</identifier>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</length>
+        <sequence>mkklkkhpdfpkkpltpyfrffmekrakyaklhp--emsnldltkilskkykelpekkkmkyiqdfqrekqefernlarfredhpdliqnakk---</sequence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1k99_A_f0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1k99_A_f0">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1k99_A_f1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1k99_A_f1">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_1k99_A_f2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_1k99_A_f2">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_2lef_A -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_2lef_A">
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#ProteinAlignmentSequence"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_2lef_A_f0"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_2lef_A_f1"/>
+        <hasFeature rdf:resource="https://w3id.org/salon#BB11001_2lef_A_f2"/>
+        <accessionNumber>2lef</accessionNumber>
+        <identifier>2lef_A</identifier>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</length>
+        <sequence>--------mhikkplnafmlymkemranvvaest--lkesaainqilgrrwhalsreeqakyyelarkerqlhmqlypgwsardnygkkkkrkrek</sequence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_2lef_A_f0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_2lef_A_f0">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_2lef_A_f1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_2lef_A_f1">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_2lef_A_f2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_2lef_A_f2">
+        <FNote>HELIX</FNote>
+        <FScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.00</FScore>
+        <FStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</FStart>
+        <FStop rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</FStop>
+        <FType>STRUCT</FType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col7 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col7">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col7_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col7_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col7_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.412</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col8 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col8">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col8_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col8_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col8_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.412</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col9 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col9">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col9_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col9_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col9_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.557</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col10 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col10">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col10_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col10_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col10_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.563</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col11 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col11">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col11_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col11_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col11_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.683</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col12 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col12">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col12_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col12_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col12_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.687</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col13 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col13">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col13_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col13_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col13_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.687</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col14 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col14">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col14_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col14_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col14_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.687</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col18 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col18">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col18_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col18_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col18_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.837</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col19 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col19">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col19_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col19_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col19_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.837</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col20 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col20">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col20_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col20_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col20_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.828</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col21 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col21">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col21_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col21_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col21_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.827</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col22 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col22">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col22_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col22_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col22_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.822</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col23 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col23">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col23_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col23_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col23_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.822</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col24 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col24">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col24_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col24_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col24_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.822</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col25 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col25">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col25_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col25_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col25_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.822</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col26 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col26">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col26_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col26_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col26_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.827</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col27 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col27">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col27_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col27_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col27_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.827</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col28 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col28">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col28_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col28_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col28_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.833</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col29 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col29">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col29_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col29_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col29_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.833</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col30 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col30">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col30_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col30_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col30_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.830</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col31 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col31">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col31_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col31_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col31_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.823</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col32 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col32">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col32_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col32_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col32_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.792</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col33 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col33">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col33_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col33_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col33_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.792</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col34 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col34">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col34_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col34_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col34_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.790</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col35 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col35">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col35_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col35_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col35_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.812</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col36 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col36">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col36_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col36_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col36_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.813</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col37 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col37">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col37_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col37_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col37_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.813</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col38 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col38">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col38_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col38_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col38_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.790</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col39 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col39">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col39_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col39_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col39_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.790</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col40 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col40">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col40_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col40_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col40_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.787</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col41 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col41">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col41_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col41_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col41_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.645</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col44 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col44">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col44_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col44_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col44_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.830</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col45 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col45">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col45_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col45_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col45_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.923</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col46 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col46">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col46_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col46_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col46_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.923</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col47 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col47">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col47_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col47_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col47_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.923</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col48 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col48">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col48_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col48_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col48_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col49 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col49">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col49_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col49_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col49_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col50 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col50">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col50_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col50_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col50_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col51 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col51">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col51_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col51_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col51_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col52 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col52">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col52_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col52_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col52_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col53 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col53">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col53_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col53_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col53_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col54 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col54">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col54_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col54_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col54_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col55 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col55">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col55_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col55_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col55_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col56 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col56">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col56_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col56_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col56_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col57 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col57">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col57_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col57_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col57_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col58 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col58">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col58_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col58_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col58_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col59 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col59">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col59_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col59_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col59_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col60 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col60">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col60_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col60_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col60_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col61 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col61">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col61_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col61_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col61_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col62 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col62">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col62_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col62_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col62_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col63 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col63">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col63_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col63_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col63_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col64 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col64">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col64_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col64_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col64_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col65 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col65">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col65_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col65_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col65_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.000</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col66 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col66">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col66_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col66_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col66_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.963</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col67 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col67">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col67_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col67_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col67_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.963</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col68 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col68">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col68_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col68_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col68_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.952</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col69 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col69">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col69_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col69_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col69_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.911</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col70 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col70">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col70_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col70_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col70_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.872</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col71 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col71">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col71_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col71_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col71_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.872</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col72 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col72">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col72_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col72_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col72_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.835</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col73 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col73">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col73_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col73_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col73_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.835</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col74 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col74">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col74_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col74_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col74_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.717</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col75 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col75">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col75_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col75_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col75_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.690</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col76 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col76">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col76_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col76_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col76_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.690</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col77 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col77">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col77_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col77_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col77_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.690</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col82 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col82">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col82_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col82_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col82_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.277</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col83 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col83">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col83_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col83_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col83_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.287</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col84 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col84">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col84_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col84_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col84_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.302</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col85 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col85">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col85_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col85_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col85_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.308</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col86 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col86">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col86_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col86_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col86_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.308</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col87 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col87">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col87_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col87_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col87_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.312</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col89 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col89">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col89_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col89_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col89_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.313</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col92 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col92">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col92_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col92_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col92_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.230</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col93 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col93">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col93_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col93_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col93_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.230</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col94 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col94">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col94_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col94_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col94_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.230</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col95 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col95">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col95_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col95_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col95_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.230</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col96 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col96">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col96_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col96_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col96_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.320</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col97 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col97">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col97_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col97_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col97_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.320</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col98 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col98">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col98_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col98_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col98_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.270</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col99 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col99">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col99_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col99_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col99_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.270</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col100 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col100">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col100_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col100_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col100_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col101 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col101">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col101_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col101_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col101_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col102 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col102">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col102_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col102_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col102_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col103 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col103">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col103_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col103_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col103_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col104 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col104">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col104_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col104_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col104_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col105 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col105">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col105_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col105_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col105_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col106 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col106">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col106_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col106_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col106_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col107 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col107">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col107_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col107_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col107_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.440</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col109 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col109">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col109_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col109_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col109_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.340</salon:score>
+    </NamedIndividual>
+
+
+
+
+
+    <!-- https://w3id.org/salon#BB11001_Col110 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col110">
+        <rdf:type rdf:resource="https://w3id.org/salon#AlignmentColumn"/>
+        <salon:hasColumnScore rdf:resource="https://w3id.org/salon#BB11001_Col110_Score_GUIDANCE2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/salon#BB11001_Col110_Score_GUIDANCE2 -->
+
+    <NamedIndividual rdf:about="https://w3id.org/salon#BB11001_Col110_Score_GUIDANCE2">
+        <rdf:type rdf:resource="https://w3id.org/salon#ColumnScore"/>
+        <salon:hasColumnScoreFunction rdf:resource="https://w3id.org/salon#ColumnScoreGUIDANCE"/>
+        <salon:score rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.340</salon:score>
+    </NamedIndividual>
+
+
+
+    <!-- https://w3id.org/salon#BB11001_ref1-v1-1aab_ref1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/salon#BB11001_ref1-v1-1aab_ref1">
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#SubAlignment"/>
+        <hasSequence rdf:resource="https://w3id.org/salon#BB11001_1aab_"/>
+        <hasSequence rdf:resource="https://w3id.org/salon#BB11001_1j46_A"/>
+        <hasSequence rdf:resource="https://w3id.org/salon#BB11001_1k99_A"/>
+        <hasSequence rdf:resource="https://w3id.org/salon#BB11001_2lef_A"/>
+        <subAlignmentName>ref1-v1-1aab_ref1</subAlignmentName>
     </owl:NamedIndividual>
     
 
@@ -1152,8 +3400,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/salon#ColumnScoreTC">
         <rdf:type rdf:resource="https://w3id.org/salon#MaximizationColumnScoreFunction"/>
+        <rdf:type rdf:resource="https://w3id.org/salon#NamedIndividual"/>
         <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</scoreMax>
+        <scoreMax rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</scoreMax>
         <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</scoreMin>
+        <scoreMin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</scoreMin>
     </owl:NamedIndividual>
     
 
@@ -1227,50 +3478,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
         <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
@@ -1295,6 +3502,113 @@
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1324,9 +3638,9 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1345,61 +3659,9 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1441,9 +3703,8 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1463,27 +3724,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
@@ -1495,40 +3735,9 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
-        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
     </rdf:Description>
     <rdf:Description>
         <sdo:affiliation>
@@ -1600,17 +3809,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
@@ -1655,6 +3853,110 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
+        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
+        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
+        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+    </rdf:Description>
+    <rdf:Description>
+        <sdo:affiliation>
+            <rdf:Description>
+                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
+                <sdo:url rdf:resource="https://www.uma.es/"/>
+            </rdf:Description>
+        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
         <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
@@ -1677,26 +3979,6 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
         <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
         <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
         <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
@@ -1708,40 +3990,9 @@
                 <sdo:url rdf:resource="https://www.uma.es/"/>
             </rdf:Description>
         </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:ismael@lcc.uma.es"/>
-        <sdo:identifier rdf:resource="https://orcid.org/0000-0001-7819-5416"/>
-        <sdo:name xml:lang="en">Ismael Navas-Delgado</sdo:name>
-    </rdf:Description>
-    <rdf:Description>
-        <sdo:affiliation>
-            <rdf:Description>
-                <sdo:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Málaga</sdo:name>
-                <sdo:url rdf:resource="https://www.uma.es/"/>
-            </rdf:Description>
-        </sdo:affiliation>
-        <sdo:email rdf:resource="mailto:mmar@lcc.uma.es"/>
-        <sdo:name xml:lang="en">María del Mar Roldán-García</sdo:name>
+        <sdo:email rdf:resource="mailto:antoniobenitez@lcc.uma.es"/>
+        <sdo:identifier rdf:resource="https://orcid.org/0000-0002-4396-8359"/>
+        <sdo:name xml:lang="en">Antonio Benítez-Hidalgo</sdo:name>
     </rdf:Description>
     
 
