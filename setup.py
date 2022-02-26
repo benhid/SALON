@@ -9,13 +9,13 @@ with open(join(basedir, "README.md"), encoding="utf-8") as f:
 
 install_requires = [
     "Biopython",
-    "rdflib==5.0.0",  # Warn: this version is required for pylode (see: https://github.com/RDFLib/pyLODE/issues/145)
-    "rdflib-jsonld==0.5.0" "SPARQLWrapper",  # Required for rdflib<=5.0.0
+    "rdflib",
+    "SPARQLWrapper",
     "requests",
     "click",
 ]
 extras_require = {
-    "docs": install_requires + ["pylode==2.12.0"],
+    "docs": install_requires + ["pylode"],
     "black": install_requires + ["isort", "black"],
 }
 
