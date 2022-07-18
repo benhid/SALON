@@ -31,7 +31,7 @@ def header(uri: str):
         + """> a salon:ProteinAlignmentSequence ;
                               salon:identifier ?UniqueIdentifier ;
                               salon:organism ?OrganismIdentifier ;
-                              salon:associatedTo ?protein .
+                              salon:hasAssociationWith ?protein .
             ?protein a salon:Protein ;
                      salon:proteinName ?ProteinName ;
                      rdfs:seeAlso ?pdb .

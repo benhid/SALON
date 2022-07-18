@@ -10,4 +10,4 @@ black: clean
 .PHONY: docs
 
 docs:
-	@pylode -i SALON.owl -o ./docs/index.html
+	@pylode SALON.owl -o ./docs/index.html

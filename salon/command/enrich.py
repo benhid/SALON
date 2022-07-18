@@ -71,7 +71,7 @@ def enrich(uri: str):
             + """> salon:organism ?ncbi . 
                 <"""
             + uri
-            + """> salon:associatedTo ?protein_uri .
+            + """> salon:hasAssociationWith ?protein_uri .
                 ?protein_uri a salon:Protein .
                 ?protein_uri salon:description ?protfullname .
                 ?protein_uri salon:keyword ?protmnemonic .
