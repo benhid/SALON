@@ -897,7 +897,7 @@
     <!-- https://w3id.org/salon#Feature -->
 
     <owl:Class rdf:about="https://w3id.org/salon#Feature">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structural or functional feature associated with a sequence, e.g., a region of interest, a secondary structure element,...</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structural or functional feature associated with a sequence, e.g., a region of interest, a secondary structure element, etc.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature</rdfs:label>
     </owl:Class>
     
